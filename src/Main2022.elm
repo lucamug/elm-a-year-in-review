@@ -230,15 +230,8 @@ dataOthersToString data =
     typeToString data.type_
         ++ " "
         ++ link { title = data.title, url = data.url }
-        ++ " by **"
-        ++ data.by
-        ++ "**"
-        ++ (if String.isEmpty data.descriptions then
-                ""
-
-            else
-                " (" ++ data.descriptions ++ ")"
-           )
+        ++ addBy data.by data.title
+        ++ addDescription data.descriptions
         ++ (if String.isEmpty data.image then
                 ""
 
@@ -249,6 +242,29 @@ dataOthersToString data =
                     , url = data.url
                     }
            )
+
+
+addDescription description =
+    if String.isEmpty description then
+        ""
+
+    else
+        " (" ++ description ++ ")"
+
+
+addBy : String -> String -> String
+addBy by title =
+    if String.isEmpty by then
+        let
+            _ =
+                Debug.log "By is missing" title
+        in
+        ""
+
+    else
+        " by **"
+            ++ by
+            ++ "**"
 
 
 dataYoutubeToString : Year2022.Youtube.Data -> String
@@ -279,12 +295,7 @@ dataYoutubeToString data =
             else
                 " at " ++ data.event
            )
-        ++ (if String.isEmpty data.descriptions then
-                ""
-
-            else
-                " (" ++ data.descriptions ++ ")"
-           )
+        ++ addDescription data.descriptions
         ++ image
             { title = data.title
             , image = img
