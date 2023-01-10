@@ -4840,6 +4840,7 @@ var $author$project$Year2022$Others$Announcement = {$: 'Announcement'};
 var $author$project$Year2022$Others$Game = {$: 'Game'};
 var $author$project$Year2022$Others$Podcast = {$: 'Podcast'};
 var $author$project$Year2022$Others$Post = {$: 'Post'};
+var $author$project$Year2022$Others$Presentation = {$: 'Presentation'};
 var $author$project$Year2022$Others$Project = {$: 'Project'};
 var $author$project$Year2022$Others$Survey = {$: 'Survey'};
 var $author$project$Year2022$Others$Tutorial = {$: 'Tutorial'};
@@ -4985,7 +4986,10 @@ var $author$project$Year2022$Others$data = _List_fromArray(
 		{by: 'Anthonny Quérouil', date: '2022-02-21', descriptions: 'I have just updated my starter kit to work with @elmlang and @meteorjs', image: 'meteor.jpeg', title: 'Meteor with Elm starter kit', type_: $author$project$Year2022$Others$Project, url: 'https://twitter.com/anthonny_q/status/1495771601463386113'},
 		{by: 'Carlos Saltos', date: '2022-03-30', descriptions: '', image: '', title: 'Install Elm for Linux arm64', type_: $author$project$Year2022$Others$Post, url: 'https://dev.to/csaltos/elm-for-linux-arm64-32bc'},
 		{by: 'Bohdan Balov', date: '2022-01-19', descriptions: '', image: '', title: 'Why I decided to learn Elm and drop React', type_: $author$project$Year2022$Others$Post, url: 'https://twitter.com/balov_bohdan/status/1483673274185916417'},
-		{by: 'Luca Mugnaini', date: '2022-02-07', descriptions: '', image: 'typescript.webp', title: 'Differences between TypeScript and Elm', type_: $author$project$Year2022$Others$Post, url: 'https://dev.to/lucamug/typescript-and-elm-3g38'}
+		{by: 'Luca Mugnaini', date: '2022-02-07', descriptions: '', image: 'typescript.webp', title: 'Differences between TypeScript and Elm', type_: $author$project$Year2022$Others$Post, url: 'https://dev.to/lucamug/typescript-and-elm-3g38'},
+		{by: 'clojj', date: '2022-02-16', descriptions: 'Clojj announced the renovation of the IntellyJ Elm Plugin and already had some success with elm-review integration, Lamdera project support', image: '', title: 'IntelliJ Elm Plugin future', type_: $author$project$Year2022$Others$Announcement, url: 'https://discourse.elm-lang.org/t/intellij-elm-plugin-future/8163/'},
+		{by: 'Jakob Ferdinand', date: '2022-11-17', descriptions: 'A presentation written in elm-land that anyone can use it. [Code](https://github.com/JakobFerdinand/elm-pres), [Live presentation](https://elm-pres.jakobferdinand.at/)', image: 'presentation-jakob.png', title: 'Elm, If it compiles it works!', type_: $author$project$Year2022$Others$Presentation, url: 'https://elm-pres.jakobferdinand.at/'},
+		{by: 'Adrien Dulac', date: '2022-12-01', descriptions: 'Fractale is part of the “productivity” or “asynchronous communication” tools family. As a developer, I am satisfied with the organization and collaboration tools built around Git, such as Github/Gitlab/Gitea. But for human beings who are not developers or strangers to these tools, they remain too complex and ill adapted...', image: 'fractale.png', title: 'Fractale', type_: $author$project$Year2022$Others$Project, url: 'https://discourse.elm-lang.org/t/announcing-fractale/8792'}
 	]);
 var $author$project$Year2022$Youtube$data = _List_fromArray(
 	[
@@ -12188,6 +12192,8 @@ var $author$project$Main2022$typeToString = function (type_) {
 			return 'Tutorial';
 		case 'Survey':
 			return 'Survey';
+		case 'Presentation':
+			return 'Presentation';
 		case 'Project':
 			return 'Project';
 		default:

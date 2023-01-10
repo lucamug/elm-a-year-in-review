@@ -503,6 +503,9 @@ typeToString type_ =
         Year2022.Others.Survey ->
             "Survey"
 
+        Year2022.Others.Presentation ->
+            "Presentation"
+
         Year2022.Others.Project ->
             "Project"
 

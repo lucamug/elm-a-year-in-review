@@ -21,6 +21,7 @@ type Type_
     | Survey
     | Project
     | Podcast
+    | Presentation
 
 
 data : List Data
@@ -1153,23 +1154,31 @@ data =
       , image = "typescript.webp"
       , type_ = Post
       }
+    , { descriptions = "Clojj announced the renovation of the IntellyJ Elm Plugin and already had some success with elm-review integration, Lamdera project support"
+      , url = "https://discourse.elm-lang.org/t/intellij-elm-plugin-future/8163/"
+      , title = "IntelliJ Elm Plugin future"
+      , by = "clojj"
+      , date = "2022-02-16"
+      , image = ""
+      , type_ = Announcement
+      }
+    , { descriptions = "A presentation written in elm-land that anyone can use it. [Code](https://github.com/JakobFerdinand/elm-pres), [Live presentation](https://elm-pres.jakobferdinand.at/)"
+      , url = "https://elm-pres.jakobferdinand.at/"
+      , title = "Elm, If it compiles it works!"
+      , by = "Jakob Ferdinand"
+      , date = "2022-11-17"
+      , image = "presentation-jakob.png"
+      , type_ = Presentation
+      }
+    , { descriptions = "Fractale is part of the “productivity” or “asynchronous communication” tools family. As a developer, I am satisfied with the organization and collaboration tools built around Git, such as Github/Gitlab/Gitea. But for human beings who are not developers or strangers to these tools, they remain too complex and ill adapted..."
+      , url = "https://discourse.elm-lang.org/t/announcing-fractale/8792"
+      , title = "Fractale"
+      , by = "Adrien Dulac"
+      , date = "2022-12-01"
+      , image = "fractale.png"
+      , type_ = Project
+      }
 
-    -- , { descriptions = ""
-    --   , url = ""
-    --   , title = ""
-    --   , by = ""
-    --   , date = "2022-"
-    --   , image = ""
-    --   , type_ = Undecided
-    --   }
-    -- , { descriptions = ""
-    --   , url = ""
-    --   , title = ""
-    --   , by = ""
-    --   , date = "2022-"
-    --   , image = ""
-    --   , type_ = Undecided
-    --   }
     -- , { descriptions = ""
     --   , url = ""
     --   , title = ""
