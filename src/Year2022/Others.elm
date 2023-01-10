@@ -714,6 +714,14 @@ data =
       , image = "cards.webp"
       , type_ = Post
       }
+    , { descriptions = "The games are a result of inspiration from Sebastian Lague videos."
+      , url = "https://experiments.klemenc.io/sudoku"
+      , title = "Sudoku & experiments"
+      , by = "David Klemenc"
+      , date = "2022-08-24"
+      , image = ""
+      , type_ = Game
+      }
     , { descriptions = ""
       , url = "https://discourse.elm-lang.org/t/introducing-elm-watch-elm-make-in-watch-mode-fast-and-reliable/8653"
       , title = "Introducing elm-watch: elm make in watch mode. Fast and reliable"
