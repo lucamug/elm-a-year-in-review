@@ -1162,7 +1162,7 @@ data =
       , image = ""
       , type_ = Announcement
       }
-    , { descriptions = "A presentation written in elm-land that anyone can use it. [Code](https://github.com/JakobFerdinand/elm-pres), [Live presentation](https://elm-pres.jakobferdinand.at/)"
+    , { descriptions = "A presentation written in elm-land that anyone can use. [Code](https://github.com/JakobFerdinand/elm-pres), [Live presentation](https://elm-pres.jakobferdinand.at/)"
       , url = "https://elm-pres.jakobferdinand.at/"
       , title = "Elm, If it compiles it works!"
       , by = "Jakob Ferdinand"
