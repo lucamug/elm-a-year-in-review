@@ -154,6 +154,14 @@ data =
       , image = ""
       , type_ = Game
       }
+    , { descriptions = "Minidenticons, a super-lightweight SVG identicon generator for client-side avatars"
+      , url = "https://discourse.elm-lang.org/t/super-lightweight-svg-identicon-avatar-generator/8172"
+      , title = "Minidenticons ported to Elm"
+      , by = "Laurent Payot"
+      , date = "2022-02-22"
+      , image = "minidenticons.png"
+      , type_ = Announcement
+      }
     , { descriptions = "Announcing Elm-Craft, a place for curated list of books on Elm, podcasts or other learning materials."
       , url = "https://discourse.elm-lang.org/t/announcing-elmcraft-a-place-for-all-things-elm/8189"
       , title = "Announcing Elmcraft - a place for all things Elm"
