@@ -494,7 +494,7 @@ data =
       , url = "https://www.crowdstrike.com/blog/tech-center/understanding-ui-components-in-elm/"
       , title = "Understanding UI Components in Elm"
       , by = "Kasper Andersen"
-      , date = "2022-12-28"
+      , date = "2022-06-22"
       , image = "web-components.png"
       , type_ = Post
       }
