@@ -727,7 +727,7 @@ data =
       , title = "Sudoku & experiments"
       , by = "David Klemenc"
       , date = "2022-08-24"
-      , image = ""
+      , image = "sudoku.png"
       , type_ = Game
       }
     , { descriptions = ""
@@ -1193,6 +1193,22 @@ data =
       , date = "2022-12-01"
       , image = "fractale.png"
       , type_ = Project
+      }
+    , { descriptions = ""
+      , url = "https://docs.google.com/presentation/d/1nntLMrGaLsCOV83DOPvW7c0aemFoApIszuhRzoThYrs/"
+      , title = "Yet another way to manage shared state in Elm SPAs"
+      , by = "Jeremy H. Brown"
+      , date = "2022-10-12"
+      , image = "manage.png"
+      , type_ = Presentation
+      }
+    , { descriptions = ""
+      , url = "https://docs.google.com/presentation/d/1lTgRyGbswb2ozynYckLUZja_FY5RGlBnfJGduOUsYGc/"
+      , title = "Thought experiment: Hiding implementation types in Elm"
+      , by = "Jeremy H. Brown"
+      , date = "2022-11-30"
+      , image = "hiding.png"
+      , type_ = Presentation
       }
 
     -- , { descriptions = ""
