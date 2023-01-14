@@ -132,7 +132,7 @@ companies =
     , { name = "Gizra"
       , url = "http://www.gizra.com/"
       , github = "https://github.com/Gizra"
-      , desc = "Gizra build websites."
+      , desc = "Gizra build websites. [Talk about Elm at Gizra](https://www.youtube.com/watch?v=FgaoOgJ5CAU)."
       , cat = Consulting
       }
     , { name = "jambit"
@@ -180,7 +180,7 @@ companies =
     , { name = "Rakuten"
       , url = "https://global.rakuten.com/corp/"
       , github = "https://rakutentech.github.io/"
-      , desc = "Global electronic commerce and Internet company based in Japan"
+      , desc = "Global electronic commerce and Internet company based in Japan. [Post about Elm at Rakuten](https://dev.to/lucamug/elm-6m8)."
       , cat = Ecommerce
       }
     , { name = "Zalora"
@@ -197,7 +197,7 @@ companies =
       }
     , { name = "Brilliant"
       , url = "https://www.brilliant.org/"
-      , github = ""
+      , github = "https://github.com/orgs/brilliantorg/repositories?language=elm"
       , desc = "Learn math and science through hands-on, interactive problem solving. Most of our interactives are written in Elm! We're headquartered in San Francisco, CA but have folks all over the US, Canada and remote. Journey to building \"Diagrammar\", Brilliant.org's interactive diagram tool in Elm: https://youtu.be/gT9Xu-ctNqI by Pontus Granström [@pnutus](https://github.com/pnutus) (Strange Loop 2022)"
       , cat = Education
       }
@@ -228,7 +228,7 @@ companies =
     , { name = "NoRedInk"
       , url = "https://www.noredink.com/"
       , github = "https://github.com/NoRedInk"
-      , desc = "NoRedInk provide a language learning platform for children. Evan Czaplicki, the creator of Elm, is a NoRedInk employee."
+      , desc = "NoRedInk provide a language learning platform for children. Evan Czaplicki, the creator of Elm, worked at NoRedInk. [Post about Elm at NoRedInk](https://juliu.is/elm-at-noredink/)."
       , cat = Education
       }
     , { name = "Roompact"
@@ -627,6 +627,36 @@ companies =
       , desc = "Norway's national bus and railway company. The majority of the website and ticket booking is written in Elm."
       , cat = Travel
       }
+    , { name = "Ford"
+      , url = "https://www.ford.com/"
+      , github = ""
+      , desc = "[Talk about Elm at Ford (Elm Conf)](https://www.youtube.com/watch?v=5WVXCy1Q88o \"Facilitating Technology Change Through Cultural Change - Grant Maki\")."
+      , cat = Automotive
+      }
+    , { name = "Humlio"
+      , url = "https://www.humio.com/"
+      , github = ""
+      , desc = "Humio is the creator of the Humio live observability platform that enables data aggregation, exploration, reporting and analysis from a range of sources. The purpose-built logging tool features innovative data storage and in-memory search/query engine technologies. [Post about Elm at Humlio](https://www.humio.com/whats-new/blog/why-we-chose-elm-for-humio-s-web-ui)."
+      , cat = IT
+      }
+    , { name = "Thoughtbot"
+      , url = "https://thoughtbot.com/"
+      , github = ""
+      , desc = "Thoughtbot is your expert design and development partner. We bring digital products from validation to success and teach you how because we care. It’s time to move beyond simply building features and start designing the right product with the right strategy. [Posts about Elm at Thoughtbot](https://thoughtbot.com/blog/tags/elm)."
+      , cat = IT
+      }
+    , { name = "Ableton"
+      , url = "https://www.ableton.com/en/about/"
+      , github = ""
+      , desc = "Ableton makes unique software and hardware for music creation and performance. They use Elm for an application to [learn music](https://twitter.com/abletondev/status/861580662620508160)."
+      , cat = Music
+      }
+    , { name = "Ava Security"
+      , url = "https://www.avasecurity.com/"
+      , github = ""
+      , desc = "Ava Security is a global technology company that protects people and assets with proactive video security and human-centric data loss protection. Offices in UK, Norway and USA."
+      , cat = Security
+      }
 
     -- ,
     -- { name = ""
@@ -672,3 +702,4 @@ type Cat
     | Software
     | SustainabilityTechnology
     | Travel
+    | Music
