@@ -36,7 +36,7 @@ companies =
     , { name = "NLX"
       , url = "https://nlx.ai"
       , github = "https://github.com/nlxai"
-      , desc = "Using NLX, you can build and manage conversational AI applications without programming. Instead, users work with a web app and  visual editor built entirely in Elm using the [elm-arborist](https://github.com/peterszerzo/elm-arborist) package. NLX is based in New York City."
+      , desc = "Using NLX, you can build and manage conversational AI applications without programming. Instead, users work with a web app and visual editor built entirely in Elm using the [elm-arborist](https://github.com/peterszerzo/elm-arborist) package. NLX is based in New York City."
       , cat = Chatbots
       }
     , { name = "Cachix"
@@ -60,13 +60,13 @@ companies =
     , { name = "Gripeless"
       , url = "https://usegripeless.com"
       , github = "https://github.com/gripeless"
-      , desc = "We offer a widget that you can install on your website which is built entirely\n    in Elm. Based in Poland, Gripeless improves products with user complaints."
+      , desc = "We offer a widget that you can install on your website which is built entirely in Elm. Based in Poland, Gripeless improves products with user complaints."
       , cat = Communications
       }
     , { name = "Snapview"
       , url = "https://snapview.net"
       , github = "https://github.com/snapview"
-      , desc = "German company that produces software for web-based video consultations.\n    The frontend is written in Elm and TypeScript, the backend in Rust. Legacy\n    components also use JavaScript, C# and C++."
+      , desc = "German company that produces software for web-based video consultations. The frontend is written in Elm and TypeScript, the backend in Rust. Legacy components also use JavaScript, C# and C++."
       , cat = Communications
       }
     , { name = "Virtual Airwaves"
@@ -84,7 +84,7 @@ companies =
     , { name = "BEC Systems"
       , url = "http://bec-systems.com"
       , github = ""
-      , desc = "BEC is a consulting company located  in the Unites States helping companies develop full stack  solutions using [embedded Linux](http://yoedistro.org), Cloud, and [IoT technologies](http://simpleiot.org)."
+      , desc = "BEC is a consulting company located in the Unites States helping companies develop full stack solutions using [embedded Linux](http://yoedistro.org), Cloud, and [IoT technologies](http://simpleiot.org)."
       , cat = Consulting
       }
     , { name = "Bekk"
@@ -162,13 +162,13 @@ companies =
     , { name = "Webbhuset"
       , url = "https://webbhuset.se"
       , github = "https://github.com/webbhuset"
-      , desc = "Is a consultancy firm based in Gothenburg & Stockholm, Sweden  that Develops E-Commerce websites for some of the world's biggest brands including L'ORÉAL, Mary Kay and HaperCollins.  They have deployed 6 Elm SPAs on behalf of their clients in the past two years. More detail in this  [Elm Europe 2019 Talk](https://youtu.be/YV_qrjN8bRA?t=68)"
+      , desc = "Is a consultancy firm based in Gothenburg & Stockholm, Sweden that Develops E-Commerce websites for some of the world's biggest brands including L'ORÉAL, Mary Kay and HaperCollins.  They have deployed 6 Elm SPAs on behalf of their clients in the past two years. More detail in this [Elm Europe 2019 Talk](https://youtu.be/YV_qrjN8bRA?t=68)"
       , cat = Consulting
       }
     , { name = "Zeit.dev"
       , url = "https://zeit.io"
       , github = ""
-      , desc = "Zeit.dev is an international team of talents  located around the globe (Germany, UK, India & Sweden). We are well versed  in functional programming and strive to build quality software."
+      , desc = "Zeit.dev is an international team of talents located around the globe (Germany, UK, India & Sweden). We are well versed in functional programming and strive to build quality software."
       , cat = Consulting
       }
     , { name = "Drip"
@@ -186,7 +186,7 @@ companies =
     , { name = "Zalora"
       , url = "https://zalora.com/"
       , github = ""
-      , desc = "Based in Singapore, Zalora is the leading \n      fashion e-commerce shop in Southeast Asia. We utilize Elm for our shop's \n      catalog, improving the customer's experience when shopping with us."
+      , desc = "Based in Singapore, Zalora is the leading fashion e-commerce shop in Southeast Asia. We utilize Elm for our shop's catalog, improving the customer's experience when shopping with us."
       , cat = Ecommerce
       }
     , { name = "Bellroy"
@@ -252,25 +252,25 @@ companies =
     , { name = "PINATA"
       , url = "https://www.gopinata.com/"
       , github = "https://github.com/pinata-llc"
-      , desc = "PINATA is powerful and easy-to-use software, purpose-built for the consumer  brand industry to manage tasks and goals, measure outcomes, and maximize ROI. HQ in NYC, remote-friendly engineering team.  All new front-end code is written in Elm."
+      , desc = "PINATA is powerful and easy-to-use software, purpose-built for the consumer brand industry to manage tasks and goals, measure outcomes, and maximize ROI. HQ in NYC, remote-friendly engineering team.  All new front-end code is written in Elm."
       , cat = FieldMarketing
       }
     , { name = "Basiq"
       , url = "https://basiq.io/"
       , github = "https://github.com/basiqio"
-      , desc = "Basiq is the best aggregation platform for acquiring financial data. We provide secure access to hundreds of financial institutions through  a simple set of RESTful APIs."
+      , desc = "Basiq is the best aggregation platform for acquiring financial data. We provide secure access to hundreds of financial institutions through a simple set of RESTful APIs."
       , cat = FinTech
       }
     , { name = "Caribou"
       , url = "https://www.caribou.com/"
       , github = "https://github.com/caribou-oss"
-      , desc = "  Washington DC, USA - Caribou allows customers to take control of their car payments by  refinancing their auto loans. We also allow customers to shop for  car insurance through our insurance platform which is built in Elm."
+      , desc = "  Washington DC, USA - Caribou allows customers to take control of their car payments by refinancing their auto loans. We also allow customers to shop for car insurance through our insurance platform which is built in Elm."
       , cat = FinTech
       }
     , { name = "Featurespace"
       , url = "http://www.featurespace.com/"
       , github = "https://github.com/Featurespace"
-      , desc = "is the world leader in enterprise financial crime prevention for fraud and anti-money laundering. Featurespace invented Adaptive Behavioral Analytics  and Automated Deep Behavioral Networks, both of which are available through\u{202F} the ARIC platform, a real-time machine learning software that risk scores  millions of events each second in more than 180 countries. The company  [chooses](https://www.youtube.com/watch?v=0AosqGTEa0Q) to build its user interface  with Elm, and with over 300k lines of code it is one of the largest users of Elm  in the world."
+      , desc = "is the world leader in enterprise financial crime prevention for fraud and anti-money laundering. Featurespace invented Adaptive Behavioral Analytics and Automated Deep Behavioral Networks, both of which are available through\u{202F} the ARIC platform, a real-time machine learning software that risk scores millions of events each second in more than 180 countries. The company [chooses](https://www.youtube.com/watch?v=0AosqGTEa0Q) to build its user interface with Elm, and with over 300k lines of code it is one of the largest users of Elm in the world."
       , cat = FinTech
       }
     , { name = "FörsäkringsGirot"
@@ -282,13 +282,13 @@ companies =
     , { name = "iZettle"
       , url = "https://www.izettle.com"
       , github = "https://github.com/iZettle"
-      , desc = "iZettle is a one-stop shop for cutting-edge commerce tools — offering\n    everything you need to take quick payments, ease day-to-day management,\n    and get the funding to grow."
+      , desc = "iZettle is a one-stop shop for cutting-edge commerce tools — offering everything you need to take quick payments, ease day-to-day management, and get the funding to grow."
       , cat = FinTech
       }
     , { name = "MackeyRMS"
       , url = "https://www.mackeyrms.com/"
       , github = "https://github.com/MackeyRMS"
-      , desc = "Boston USA - MackeyRMS is a SaaS-based research management platform engineered to optimize the way analysts and portfolio managers generate, share, debate and act on  investment research conducted for actively managed portfolios. Relied upon  as a single system of record for research supporting the investment process,  MackeyRMS is used by many of the world’s leading investment managers to  organize key investment workflows, engender trust from investors, and  streamline regulatory and compliance oversight."
+      , desc = "Boston USA - MackeyRMS is a SaaS-based research management platform engineered to optimize the way analysts and portfolio managers generate, share, debate and act on investment research conducted for actively managed portfolios. Relied upon as a single system of record for research supporting the investment process,  MackeyRMS is used by many of the world’s leading investment managers to organize key investment workflows, engender trust from investors, and streamline regulatory and compliance oversight."
       , cat = FinTech
       }
     , { name = "Smallbrooks"
@@ -300,7 +300,7 @@ companies =
     , { name = "treefin"
       , url = "https://www.treefin.com"
       , github = "https://github.com/treefin"
-      , desc = "treefin (Munich) is a German language mobile application that organizes your finances. Beyond our app, we work on many exciting projects of personal finance  management. A great deal of the front-end is written in elm."
+      , desc = "treefin (Munich) is a German language mobile application that organizes your finances. Beyond our app, we work on many exciting projects of personal finance management. A great deal of the front-end is written in elm."
       , cat = FinTech
       }
     , { name = "Dividat"
@@ -318,7 +318,7 @@ companies =
     , { name = "Pacific Health Dynamics"
       , url = "https://www.pacificdynamics.com.au/"
       , github = "https://github.com/Pacific-Health-Dynamics/"
-      , desc = "PHD specialises in comprehensive health insurance tech solutions for risk management in Private  Health Funds. Based in Sydney. The primary app is 134k+ lines of Elm in front of a mixed C# / Kotlin backend."
+      , desc = "PHD specialises in comprehensive health insurance tech solutions for risk management in Private Health Funds. Based in Sydney. The primary app is 134k+ lines of Elm in front of a mixed C# / Kotlin backend."
       , cat = Healthcare
       }
     , { name = "SMRxT"
@@ -384,7 +384,7 @@ companies =
     , { name = "Idein"
       , url = "https://idein.jp/"
       , github = "https://github.com/Idein"
-      , desc = "[Actcast](https://actcast.io/) is an IoT platform service which links events\n    and data in the physical world to the Web with deep learning inference on the\n    edge devices."
+      , desc = "[Actcast](https://actcast.io/) is an IoT platform service which links events and data in the physical world to the Web with deep learning inference on the edge devices."
       , cat = IoT
       }
     , { name = "Simple IoT"
@@ -396,7 +396,7 @@ companies =
     , { name = "Blissfully"
       , url = "https://www.blissfully.com/"
       , github = "https://github.com/Blissfully"
-      , desc = "Blissfully is a SaaS management platform, providing visibility into an organizations  SaaS apps' usage and spend, along with powerful workflows to manage change. Headquarters in NYC, engineering is remote friendly, with 50% outside NYC."
+      , desc = "Blissfully is a SaaS management platform, providing visibility into an organizations SaaS apps' usage and spend, along with powerful workflows to manage change. Headquarters in NYC, engineering is remote friendly, with 50% outside NYC."
       , cat = IT
       }
     , { name = "Stax"
@@ -420,7 +420,7 @@ companies =
     , { name = "Scrive"
       , url = "https://scrive.com"
       , github = "https://github.com/scrive"
-      , desc = "Sweden - Scrive is the Nordic market leader in electronic signature solutions. Our whole product makes heavy use of functional programming in its implementation and  recently we've started to implement more of our frontend in Elm. We now have  an admin console written entirely in Elm, and our electronic ID service  exclusively uses elm for its frontend. We intend for the amount of elm in our codebase to increase even more over the next year."
+      , desc = "Sweden - Scrive is the Nordic market leader in electronic signature solutions. Our whole product makes heavy use of functional programming in its implementation and recently we've started to implement more of our frontend in Elm. We now have an admin console written entirely in Elm, and our electronic ID service exclusively uses elm for its frontend. We intend for the amount of elm in our codebase to increase even more over the next year."
       , cat = LawTech
       }
     , { name = "PinMeTo"
@@ -432,7 +432,7 @@ companies =
     , { name = "Humio"
       , url = "https://www.humio.com/"
       , github = "https://github.com/humio"
-      , desc = "Humio is is a log management platform  purpose-built for the scale of today’s data volumes by enabling users to Log  Everything to Answer Anything, all in Real-Time. We are a distributed team,  mostly in Denmark and the US. The front end is nearly 100% Elm (95k lines  of Elm code)."
+      , desc = "Humio is is a log management platform purpose-built for the scale of today’s data volumes by enabling users to Log Everything to Answer Anything, all in Real-Time. We are a distributed team,  mostly in Denmark and the US. The front end is nearly 100% Elm (95k lines of Elm code)."
       , cat = LogManagement
       }
     , { name = "BravoTran"
@@ -504,13 +504,13 @@ companies =
     , { name = "StructionSite"
       , url = "https://structionsite.com/"
       , github = "https://github.com/StructionSite"
-      , desc = "Video and photo  documentation for the construction industry for automated  tracking and recording of building site progress."
+      , desc = "Video and photo documentation for the construction industry for automated tracking and recording of building site progress."
       , cat = ProjectManagement
       }
     , { name = "SoPost"
       , url = "https://www.sopost.com/"
       , github = ""
-      , desc = "SoPost is a product sampling platform.\n    Nearly always hiring in Newcastle & Edinburgh (UK)."
+      , desc = "SoPost is a product sampling platform. Nearly always hiring in Newcastle & Edinburgh (UK)."
       , cat = ProductSampling
       }
     , { name = "Day One"
@@ -576,13 +576,13 @@ companies =
     , { name = "Fission"
       , url = "https://fission.codes"
       , github = "https://github.com/fission-suite"
-      , desc = "is a web native application platform that  includes app hosting, public + private files, end-to-end encryption, and an  account and authentication system. Developers can build and deploy apps using  only client side tech -- including Elm. Users can use the [Drive app](https://drive.fission.codes)  and authenticate using the [Auth lobby](https://auth.fission.codes/), both written in Elm. Fission is a distributed team, based in Vancouver, Canada,  Nixa, Missouri, USA, and Ghent, Belgium."
+      , desc = "is a web native application platform that includes app hosting, public + private files, end-to-end encryption, and an account and authentication system. Developers can build and deploy apps using only client side tech -- including Elm. Users can use the [Drive app](https://drive.fission.codes)  and authenticate using the [Auth lobby](https://auth.fission.codes/), both written in Elm. Fission is a distributed team, based in Vancouver, Canada,  Nixa, Missouri, USA, and Ghent, Belgium."
       , cat = Software
       }
     , { name = "Microsoft"
       , url = "https://www.microsoft.com"
       , github = "https://github.com/Microsoft/elm-json-tree-view"
-      , desc = "the world's second largest software company, has used Elm for the frontend of their  [customer support system](https://github.com/jah2488/elm-companies/issues/36)  since 2016. Microsoft's HQ is in Redmond, Washington, USA.  The team that writes Elm is distributed. More detail on Elm at Microsoft in  [Elm Town Podcast Episode 43](https://elmtown.simplecast.fm/it-just-goes-on-and-on)."
+      , desc = "the world's second largest software company, has used Elm for the frontend of their [customer support system](https://github.com/jah2488/elm-companies/issues/36)  since 2016. Microsoft's HQ is in Redmond, Washington, USA.  The team that writes Elm is distributed. More detail on Elm at Microsoft in [Elm Town Podcast Episode 43](https://elmtown.simplecast.fm/it-just-goes-on-and-on)."
       , cat = Software
       }
     , { name = "Unison"
@@ -606,7 +606,7 @@ companies =
     , { name = "Click Travel"
       , url = "http://www.clicktravel.com"
       , github = ""
-      , desc = "We’re shaping the future of business travel with our award-winning  corporate travel management and booking platform – built on the  foundations of trust, choice and great people.  Based in Birmingham, UK. Hiring remotely anywhere in the UK."
+      , desc = "We’re shaping the future of business travel with our award-winning corporate travel management and booking platform – built on the foundations of trust, choice and great people.  Based in Birmingham, UK. Hiring remotely anywhere in the UK."
       , cat = Travel
       }
     , { name = "Emirates"
