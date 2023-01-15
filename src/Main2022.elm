@@ -248,6 +248,7 @@ jobOffers =
                 )
                 (List.sortBy (\item -> String.toLower item.name) Year2022.JobOffers.data)
             )
+        , "For more job related news, susbscribe to the [Elm Weekly newsletter](https://www.elmweekly.nl/) or to the #jobs channel in the [Elm Slack](https://elm-lang.org/community/slack)."
         , "## Partial list of companies that use Elm"
         , String.join " ⬩ "
             (List.map (\item -> " [" ++ item.name ++ "](" ++ item.url ++ ")") (List.sortBy (\item -> String.toLower item.name) (Companies.data ++ companiesToAdd)))
