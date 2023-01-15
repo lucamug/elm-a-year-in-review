@@ -12149,7 +12149,7 @@ var $mdgriffith$elm_ui$Element$column = F2(
 						attrs))),
 			$mdgriffith$elm_ui$Internal$Model$Unkeyed(children));
 	});
-var $author$project$Main2022$image = function (data) {
+var $author$project$Main2022$imageMd = function (data) {
 	return '\n\n[![' + (data.title + ('](' + (data.image + (' \"' + (data.title + ('\")](' + (data.url + ')')))))));
 };
 var $author$project$Main2022$link = function (data) {
@@ -12159,7 +12159,7 @@ var $author$project$Main2022$dataElmRadioToString = function (data) {
 	var url = 'https://elm-radio.com/episode/' + data.id;
 	var title = 'Elm Radio episode #' + ($elm$core$String$fromInt(data.episode) + (' - ' + data.title));
 	return $author$project$Main2022$link(
-		{title: title, url: url}) + (' \"' + (data.descritpion + ('\"' + $author$project$Main2022$image(
+		{title: title, url: url}) + (' \"' + (data.descritpion + ('\"' + $author$project$Main2022$imageMd(
 		{image: 'images2022/elm-radio.png', title: title, url: url}))));
 };
 var $author$project$Main2022$dataElmWeeklyToString = function (data) {
@@ -12206,14 +12206,14 @@ var $author$project$Main2022$typeToString = function (type_) {
 };
 var $author$project$Main2022$dataOthersToString = function (data) {
 	return $author$project$Main2022$typeToString(data.type_) + (' ' + ($author$project$Main2022$link(
-		{title: data.title, url: data.url}) + (A2($author$project$Main2022$addBy, data.by, data.title) + ($author$project$Main2022$addDescription(data.descriptions) + ($elm$core$String$isEmpty(data.image) ? '' : $author$project$Main2022$image(
+		{title: data.title, url: data.url}) + (A2($author$project$Main2022$addBy, data.by, data.title) + ($author$project$Main2022$addDescription(data.descriptions) + ($elm$core$String$isEmpty(data.image) ? '' : $author$project$Main2022$imageMd(
 		{image: 'images2022/' + data.image, title: data.title, url: data.url}))))));
 };
 var $author$project$Main2022$dataYoutubeToString = function (data) {
 	var url = 'https://www.youtube.com/watch?v=' + data.id;
 	var img = 'http://img.youtube.com/vi/' + (data.id + '/mqdefault.jpg');
 	return 'Video ' + ($author$project$Main2022$link(
-		{title: data.title, url: url}) + (' - A presentation by **' + (data.by + ('**' + (($elm$core$String$isEmpty(data.event) ? '' : (' at ' + data.event)) + ($author$project$Main2022$addDescription(data.descriptions) + $author$project$Main2022$image(
+		{title: data.title, url: url}) + (' - A presentation by **' + (data.by + ('**' + (($elm$core$String$isEmpty(data.event) ? '' : (' at ' + data.event)) + ($author$project$Main2022$addDescription(data.descriptions) + $author$project$Main2022$imageMd(
 		{image: img, title: data.title, url: url})))))));
 };
 var $mdgriffith$elm_ui$Element$el = F2(
@@ -12245,6 +12245,57 @@ var $elm$core$Basics$composeL = F3(
 	});
 var $mdgriffith$elm_ui$Internal$Model$unstyled = A2($elm$core$Basics$composeL, $mdgriffith$elm_ui$Internal$Model$Unstyled, $elm$core$Basics$always);
 var $mdgriffith$elm_ui$Element$html = $mdgriffith$elm_ui$Internal$Model$unstyled;
+var $elm$html$Html$Attributes$alt = $elm$html$Html$Attributes$stringProperty('alt');
+var $elm$html$Html$Attributes$src = function (url) {
+	return A2(
+		$elm$html$Html$Attributes$stringProperty,
+		'src',
+		_VirtualDom_noJavaScriptOrHtmlUri(url));
+};
+var $mdgriffith$elm_ui$Element$image = F2(
+	function (attrs, _v0) {
+		var src = _v0.src;
+		var description = _v0.description;
+		var imageAttributes = A2(
+			$elm$core$List$filter,
+			function (a) {
+				switch (a.$) {
+					case 'Width':
+						return true;
+					case 'Height':
+						return true;
+					default:
+						return false;
+				}
+			},
+			attrs);
+		return A4(
+			$mdgriffith$elm_ui$Internal$Model$element,
+			$mdgriffith$elm_ui$Internal$Model$asEl,
+			$mdgriffith$elm_ui$Internal$Model$div,
+			A2(
+				$elm$core$List$cons,
+				$mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes.imageContainer),
+				attrs),
+			$mdgriffith$elm_ui$Internal$Model$Unkeyed(
+				_List_fromArray(
+					[
+						A4(
+						$mdgriffith$elm_ui$Internal$Model$element,
+						$mdgriffith$elm_ui$Internal$Model$asEl,
+						$mdgriffith$elm_ui$Internal$Model$NodeName('img'),
+						_Utils_ap(
+							_List_fromArray(
+								[
+									$mdgriffith$elm_ui$Internal$Model$Attr(
+									$elm$html$Html$Attributes$src(src)),
+									$mdgriffith$elm_ui$Internal$Model$Attr(
+									$elm$html$Html$Attributes$alt(description))
+								]),
+							imageAttributes),
+						$mdgriffith$elm_ui$Internal$Model$Unkeyed(_List_Nil))
+					])));
+	});
 var $author$project$Main2022$intToMonth = function (_int) {
 	switch (_int) {
 		case 1:
@@ -13466,57 +13517,6 @@ var $author$project$Helpers$MarkdownElmUi$heading = function (_v0) {
 			]),
 		children);
 };
-var $elm$html$Html$Attributes$alt = $elm$html$Html$Attributes$stringProperty('alt');
-var $elm$html$Html$Attributes$src = function (url) {
-	return A2(
-		$elm$html$Html$Attributes$stringProperty,
-		'src',
-		_VirtualDom_noJavaScriptOrHtmlUri(url));
-};
-var $mdgriffith$elm_ui$Element$image = F2(
-	function (attrs, _v0) {
-		var src = _v0.src;
-		var description = _v0.description;
-		var imageAttributes = A2(
-			$elm$core$List$filter,
-			function (a) {
-				switch (a.$) {
-					case 'Width':
-						return true;
-					case 'Height':
-						return true;
-					default:
-						return false;
-				}
-			},
-			attrs);
-		return A4(
-			$mdgriffith$elm_ui$Internal$Model$element,
-			$mdgriffith$elm_ui$Internal$Model$asEl,
-			$mdgriffith$elm_ui$Internal$Model$div,
-			A2(
-				$elm$core$List$cons,
-				$mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes.imageContainer),
-				attrs),
-			$mdgriffith$elm_ui$Internal$Model$Unkeyed(
-				_List_fromArray(
-					[
-						A4(
-						$mdgriffith$elm_ui$Internal$Model$element,
-						$mdgriffith$elm_ui$Internal$Model$asEl,
-						$mdgriffith$elm_ui$Internal$Model$NodeName('img'),
-						_Utils_ap(
-							_List_fromArray(
-								[
-									$mdgriffith$elm_ui$Internal$Model$Attr(
-									$elm$html$Html$Attributes$src(src)),
-									$mdgriffith$elm_ui$Internal$Model$Attr(
-									$elm$html$Html$Attributes$alt(description))
-								]),
-							imageAttributes),
-						$mdgriffith$elm_ui$Internal$Model$Unkeyed(_List_Nil))
-					])));
-	});
 var $mdgriffith$elm_ui$Element$Font$italic = $mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes.italic);
 var $mdgriffith$elm_ui$Element$Font$underline = $mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes.underline);
 var $author$project$Helpers$MarkdownElmUi$linkAttrsInline = _List_fromArray(
@@ -22072,6 +22072,13 @@ var $author$project$Main2022$main = function () {
 				]),
 			_List_fromArray(
 				[
+					A2(
+					$mdgriffith$elm_ui$Element$image,
+					_List_fromArray(
+						[
+							$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$fill)
+						]),
+					{description: '', src: 'images2022/cover2022.jpg'}),
 					A2(
 					$mdgriffith$elm_ui$Element$el,
 					_List_fromArray(

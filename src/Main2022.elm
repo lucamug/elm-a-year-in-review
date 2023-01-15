@@ -164,7 +164,8 @@ main =
     in
     layout [ padding 20 ] <|
         column [ width (maximum 700 <| fill), centerX, spacing 50 ]
-            [ el [ Font.size 30, centerX ] <| text "Draft - Elm 2022, a year in review"
+            [ image [ width fill ] { src = "images2022/cover2022.jpg", description = "" }
+            , el [ Font.size 30, centerX ] <| text "Draft - Elm 2022, a year in review"
             , Helpers.MarkdownElmUi.stringToElement markdown
             , el [ Font.size 30 ] <| text "Markdown"
             , el [ width fill ] <|
@@ -276,7 +277,7 @@ dataElmRadioToString data =
         ++ " \""
         ++ data.descritpion
         ++ "\""
-        ++ image { image = "images2022/elm-radio.png", title = title, url = url }
+        ++ imageMd { image = "images2022/elm-radio.png", title = title, url = url }
 
 
 dataElmWeeklyToString : Year2022.ElmWeekly.Data -> String
@@ -315,7 +316,7 @@ dataOthersToString data =
                 ""
 
             else
-                image
+                imageMd
                     { title = data.title
                     , image = "images2022/" ++ data.image
                     , url = data.url
@@ -375,7 +376,7 @@ dataYoutubeToString data =
                 " at " ++ data.event
            )
         ++ addDescription data.descriptions
-        ++ image
+        ++ imageMd
             { title = data.title
             , image = img
             , url = url
@@ -387,8 +388,8 @@ link data =
     "[" ++ data.title ++ "](" ++ data.url ++ ")"
 
 
-image : { a | title : String, image : String, url : String } -> String
-image data =
+imageMd : { a | title : String, image : String, url : String } -> String
+imageMd data =
     "\n\n[!["
         ++ data.title
         ++ "]("
