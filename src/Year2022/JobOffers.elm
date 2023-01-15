@@ -115,7 +115,7 @@ data =
       , careers = ""
       , source = "https://www.elmweekly.nl/p/elm-weekly-issue-232-1370195"
       }
-    , { name = "Pinata"
+    , { name = "PINATA"
       , url = "https://www.gopinata.com/"
       , careers = "https://www.gopinata.info/jobs"
       , source = "https://www.elmweekly.nl/p/elm-weekly-issue-233-1381552"

@@ -157,6 +157,7 @@ main =
                             (List.range 1 12)
                    )
                 ++ jobOffers
+                ++ "\n\n**This is all. See you in 2024!**\n\n❤️"
 
         catData =
             categorizedData
@@ -177,15 +178,78 @@ main =
             ]
 
 
+companiesToAdd :
+    List
+        { cat : Companies.Cat
+        , desc : String
+        , github : String
+        , name : String
+        , url : String
+        }
+companiesToAdd =
+    List.foldl
+        (\jobOffer acc ->
+            let
+                f =
+                    List.filter
+                        (\company -> String.toLower jobOffer.name == String.toLower company.name)
+                        Companies.data
+            in
+            if List.length f == 0 then
+                let
+                    _ =
+                        Debug.log "Adding" jobOffer.name
+                in
+                { name = jobOffer.name
+                , url = jobOffer.url
+                , github = ""
+                , desc = ""
+                , cat = Companies.Unkown
+                }
+                    :: acc
+
+            else
+                acc
+        )
+        []
+        Year2022.JobOffers.data
+
+
 jobOffers : String
 jobOffers =
     String.join "\n\n"
-        [ "\n\n## Partial list of companies that hired Elm developers in 2022"
+        [ "\n\n## Some of the companies that hired Elm developers in 2022"
         , String.join "\n\n"
-            (List.map (\item -> "* [" ++ item.name ++ "](" ++ item.url ++ ")") (List.sortBy (\item -> String.toLower item.name) Year2022.JobOffers.data))
+            (List.map
+                (\item ->
+                    let
+                        info =
+                            (if String.isEmpty item.careers then
+                                []
+
+                             else
+                                [ "[Careers](" ++ item.careers ++ ")" ]
+                            )
+                                ++ (if String.isEmpty item.source then
+                                        []
+
+                                    else
+                                        [ "[Info](" ++ item.source ++ ")" ]
+                                   )
+                    in
+                    "* [**"
+                        ++ item.name
+                        ++ "**]("
+                        ++ item.url
+                        ++ ") ("
+                        ++ String.join ", " info
+                        ++ ")"
+                )
+                (List.sortBy (\item -> String.toLower item.name) Year2022.JobOffers.data)
+            )
         , "## Partial list of companies that use Elm"
         , String.join " ⬩ "
-            (List.map (\item -> " [" ++ item.name ++ "](" ++ item.url ++ ")") (List.sortBy (\item -> String.toLower item.name) Companies.data))
+            (List.map (\item -> " [" ++ item.name ++ "](" ++ item.url ++ ")") (List.sortBy (\item -> String.toLower item.name) (Companies.data ++ companiesToAdd)))
         ]
 
 
@@ -545,10 +609,12 @@ header =
     
 2022 has been another exciting year for Elm, with many interesting packages, blog posts, videos, podcasts, demos, tutorials, applications, and so on. 
 
-Let's have a look at it in retrospective.
+Let's have a look at it in retrospect.
 
-This is a list of relevant material. I am sure there is stuff that I missed. [Send me a DM](https://twitter.com/luca_mug) in case you think there is something that I should add or remove.
+This is a list of relevant materials. I am sure there is stuff that I missed. [Send me a DM](https://twitter.com/luca_mug) in case you think there is something that I should add or remove.
 
+At the bottom, you will also find [some of the companies that hired Elm developers in 2022](#some-of-the-companies-that-hired-elm-developers-in-2022) and a [partial list of companies that use Elm](#partial-list-of-companies-that-use-elm).
+    
 If you want to keep up with Elm's related news:
 
 * Subscribe to the [Elm Weekly newsletter](https://www.elmweekly.nl/) or follow it on [Twitter](https://twitter.com/elmweekly)

@@ -12237,7 +12237,7 @@ var $mdgriffith$elm_ui$Internal$Model$Fill = function (a) {
 	return {$: 'Fill', a: a};
 };
 var $mdgriffith$elm_ui$Element$fill = $mdgriffith$elm_ui$Internal$Model$Fill(1);
-var $author$project$Main2022$header = '\n    \n2022 has been another exciting year for Elm, with many interesting packages, blog posts, videos, podcasts, demos, tutorials, applications, and so on. \n\nLet\'s have a look at it in retrospective.\n\nThis is a list of relevant material. I am sure there is stuff that I missed. [Send me a DM](https://twitter.com/luca_mug) in case you think there is something that I should add or remove.\n\nIf you want to keep up with Elm\'s related news:\n\n* Subscribe to the [Elm Weekly newsletter](https://www.elmweekly.nl/) or follow it on [Twitter](https://twitter.com/elmweekly)\n* Join the [Elm community on Slack](https://elm-lang.org/community/slack)\n* Check [discourse.elm-lang.org](https://discourse.elm-lang.org/)\n* Follow [@elmlang on Twitter](https://twitter.com/elmlang)\n* Listen to the [Elm Radio podcast](https://elm-radio.com/)\n* Browse the [Elm-Craft website](https://elmcraft.org/)\n* Check [Incremental Elm Discord](https://incrementalelm.com/chat/) for working on Elm open source projects\n\nYou can also check the previous [Elm 2021, a year in review](https://dev.to/lucamug/elm-2021-a-year-in-review-4pho).\n\nHere we go 🚀\n';
+var $author$project$Main2022$header = '\n    \n2022 has been another exciting year for Elm, with many interesting packages, blog posts, videos, podcasts, demos, tutorials, applications, and so on. \n\nLet\'s have a look at it in retrospect.\n\nThis is a list of relevant materials. I am sure there is stuff that I missed. [Send me a DM](https://twitter.com/luca_mug) in case you think there is something that I should add or remove.\n\nAt the bottom, you will also find [some of the companies that hired Elm developers in 2022](#some-of-the-companies-that-hired-elm-developers-in-2022) and a [partial list of companies that use Elm](#partial-list-of-companies-that-use-elm).\n    \nIf you want to keep up with Elm\'s related news:\n\n* Subscribe to the [Elm Weekly newsletter](https://www.elmweekly.nl/) or follow it on [Twitter](https://twitter.com/elmweekly)\n* Join the [Elm community on Slack](https://elm-lang.org/community/slack)\n* Check [discourse.elm-lang.org](https://discourse.elm-lang.org/)\n* Follow [@elmlang on Twitter](https://twitter.com/elmlang)\n* Listen to the [Elm Radio podcast](https://elm-radio.com/)\n* Browse the [Elm-Craft website](https://elmcraft.org/)\n* Check [Incremental Elm Discord](https://incrementalelm.com/chat/) for working on Elm open source projects\n\nYou can also check the previous [Elm 2021, a year in review](https://dev.to/lucamug/elm-2021-a-year-in-review-4pho).\n\nHere we go 🚀\n';
 var $elm$core$Basics$composeL = F3(
 	function (g, f, x) {
 		return g(
@@ -12273,6 +12273,262 @@ var $author$project$Main2022$intToMonth = function (_int) {
 			return $elm$time$Time$Dec;
 	}
 };
+var $author$project$Companies$Unkown = {$: 'Unkown'};
+var $author$project$Companies$Automotive = {$: 'Automotive'};
+var $author$project$Companies$Banking = {$: 'Banking'};
+var $author$project$Companies$Chatbots = {$: 'Chatbots'};
+var $author$project$Companies$CiCd = {$: 'CiCd'};
+var $author$project$Companies$Communications = {$: 'Communications'};
+var $author$project$Companies$Consulting = {$: 'Consulting'};
+var $author$project$Companies$Ecommerce = {$: 'Ecommerce'};
+var $author$project$Companies$Education = {$: 'Education'};
+var $author$project$Companies$Electronics = {$: 'Electronics'};
+var $author$project$Companies$FieldMarketing = {$: 'FieldMarketing'};
+var $author$project$Companies$FinTech = {$: 'FinTech'};
+var $author$project$Companies$Healthcare = {$: 'Healthcare'};
+var $author$project$Companies$HumanResources = {$: 'HumanResources'};
+var $author$project$Companies$IT = {$: 'IT'};
+var $author$project$Companies$Insurance = {$: 'Insurance'};
+var $author$project$Companies$IoT = {$: 'IoT'};
+var $author$project$Companies$LawTech = {$: 'LawTech'};
+var $author$project$Companies$LocationMarketing = {$: 'LocationMarketing'};
+var $author$project$Companies$LogManagement = {$: 'LogManagement'};
+var $author$project$Companies$Logistics = {$: 'Logistics'};
+var $author$project$Companies$MarketResearch = {$: 'MarketResearch'};
+var $author$project$Companies$MediaServices = {$: 'MediaServices'};
+var $author$project$Companies$Music = {$: 'Music'};
+var $author$project$Companies$Planning = {$: 'Planning'};
+var $author$project$Companies$ProductSampling = {$: 'ProductSampling'};
+var $author$project$Companies$Productivity = {$: 'Productivity'};
+var $author$project$Companies$ProjectManagement = {$: 'ProjectManagement'};
+var $author$project$Companies$RealEstate = {$: 'RealEstate'};
+var $author$project$Companies$RummageSales = {$: 'RummageSales'};
+var $author$project$Companies$Security = {$: 'Security'};
+var $author$project$Companies$Software = {$: 'Software'};
+var $author$project$Companies$Travel = {$: 'Travel'};
+var $author$project$Companies$data = _List_fromArray(
+	[
+		{cat: $author$project$Companies$Automotive, desc: 'CARFAX provide a comprehensive vehicle history database for North America.', github: 'https://github.com/CARFAX', name: 'CARFAX', url: 'https://www.carfax.com/'},
+		{cat: $author$project$Companies$Automotive, desc: 'Based in London and Munich, carwow is the most convenient, stress-free way to find and buy a new car, at a price you can be confident in, and we love Elm!', github: 'https://github.com/carwow', name: 'carwow', url: 'https://www.carwow.co.uk/'},
+		{cat: $author$project$Companies$Banking, desc: 'Largest network of banking professionals with tools for banks to collaborate as well as manage their business. We have converted all new front-end development to Elm.', github: '', name: 'CBANC', url: 'https://www.cbancnetwork.com'},
+		{cat: $author$project$Companies$Chatbots, desc: 'Using NLX, you can build and manage conversational AI applications without programming. Instead, users work with a web app and visual editor built entirely in Elm using the [elm-arborist](https://github.com/peterszerzo/elm-arborist) package. NLX is based in New York City.', github: 'https://github.com/nlxai', name: 'NLX', url: 'https://nlx.ai'},
+		{cat: $author$project$Companies$CiCd, desc: 'Build Nix packages once and share them for good.', github: 'https://github.com/cachix/elm2nix', name: 'Cachix', url: 'https://cachix.org/'},
+		{cat: $author$project$Companies$CiCd, desc: 'Concourse CI is a container-based open-source continuous thing-doer written in Go with an Elm UI and a powerful CLI. Concourse is backed by a team at', github: 'https://github.com/concourse/concourse/', name: 'Concourse CI', url: 'https://concourse-ci.org'},
+		{cat: $author$project$Companies$Communications, desc: 'German company that produces software for web-based video consultations. The frontend is written in Elm and TypeScript, the backend in Rust. Legacy components also use JavaScript, C# and C++.', github: 'https://github.com/snapview', name: 'Snapview', url: 'https://snapview.net'},
+		{cat: $author$project$Companies$Consulting, desc: '[Medium](https://medium.com/@adrian_ribao). Adrima is a Spanish development company with more than 10 years of experience who loves building software using the greatest technologies. We use Elm extensively in our [product related to employment](https://empleo.digital).', github: 'https://github.com/AdrianRibao', name: 'Adrima', url: 'https://adrima.es'},
+		{cat: $author$project$Companies$Consulting, desc: 'BEC is a consulting company located in the Unites States helping companies develop full stack solutions using [embedded Linux](http://yoedistro.org), Cloud, and [IoT technologies](http://simpleiot.org).', github: '', name: 'BEC Systems', url: 'http://bec-systems.com'},
+		{cat: $author$project$Companies$Consulting, desc: 'Bekk is a Norwegian consulting company with more than 400 employees.', github: 'https://github.com/bekk', name: 'Bekk', url: 'https://www.bekk.no/'},
+		{cat: $author$project$Companies$Consulting, desc: 'Bendyworks is a team of passionate developers in Madison, Wisconsin dedicated to sharing joy and success in our craft.', github: 'https://github.com/bendyworks', name: 'Bendyworks', url: 'https://bendyworks.com'},
+		{cat: $author$project$Companies$Consulting, desc: 'studio for strategy, design and code in Berlin, Germany. We build mobile games and web applications with Elm and other technologies', github: 'https://github.com/diesdasdigital', name: 'diesdas.digital', url: 'https://diesdas.digital'},
+		{cat: $author$project$Companies$Consulting, desc: 'Web development agency based in Amsterdam. We work on projects that contribute to positive change. [These](https://github.com/driebit/elm-projects) are some of the projects that use Elm.', github: 'https://github.com/driebit/', name: 'Driebit', url: 'https://www.driebit.nl/nl/about'},
+		{cat: $author$project$Companies$Consulting, desc: 'Folq is an online marketplace for consulting services. Based in Norway.', github: 'https://github.com/folq', name: 'Folq', url: 'https://folq.no/'},
+		{cat: $author$project$Companies$Consulting, desc: '([Blog](https://www.foxhound.systems/blog/)) - Foxhound Systems is a custom software development company based out of Chicago that builds reliable, high performance web applications.', github: 'https://github.com/foxhound-systems', name: 'Foxhound Systems', url: 'https://www.foxhound.systems/'},
+		{cat: $author$project$Companies$Consulting, desc: 'Futurice helps clients generate innovative ideas and turn them into software that works.', github: 'https://github.com/futurice', name: 'Futurice', url: 'http://futurice.com/'},
+		{cat: $author$project$Companies$Consulting, desc: 'Gizra build websites. [Talk about Elm at Gizra](https://www.youtube.com/watch?v=FgaoOgJ5CAU).', github: 'https://github.com/Gizra', name: 'Gizra', url: 'http://www.gizra.com/'},
+		{cat: $author$project$Companies$Consulting, desc: 'jambit is an innovative software company. We offer conception and development of customer-specific software solutions and draw on various industry expertise and the latest technological know-how.', github: '', name: 'jambit', url: 'https://jambit.com'},
+		{cat: $author$project$Companies$Consulting, desc: ' Kulkul Technology is a web and mobile software development company based in Jakarta, Indonesia. We are providing excellent software for business. We\'re working with companies all over the world from a single-person business to large corporates. We are a solid remote-first firm with a high emphasis on people and clear communication.', github: 'https://github.com/kulkultech', name: 'Kulkul', url: 'http://kulkul.tech/'},
+		{cat: $author$project$Companies$Consulting, desc: 'Test Double is an agency of highly-skilled developers on a mission to improve how the world writes software.', github: 'https://github.com/testdouble', name: 'Test Double', url: 'http://testdouble.com'},
+		{cat: $author$project$Companies$Consulting, desc: '([Blog](https://robots.thoughtbot.com/tags/elm)) - With over 10 years of experience, offices in major tech hubs, and a staff of developers and designers from startup backgrounds, thoughtbot can assist in all steps of the business and development process.', github: 'https://github.com/thoughtbot', name: 'thoughtbot', url: 'https://thoughtbot.com/services/elm'},
+		{cat: $author$project$Companies$Consulting, desc: 'Is a consultancy firm based in Gothenburg & Stockholm, Sweden that Develops E-Commerce websites for some of the world\'s biggest brands including L\'ORÉAL, Mary Kay and HaperCollins. They have deployed 6 Elm SPAs on behalf of their clients in the past two years. More detail in this [Elm Europe 2019 Talk](https://youtu.be/YV_qrjN8bRA?t=68)', github: 'https://github.com/webbhuset', name: 'Webbhuset', url: 'https://webbhuset.se'},
+		{cat: $author$project$Companies$Consulting, desc: 'Zeit.dev is an international team of talents located around the globe (Germany, UK, India & Sweden). We are well versed in functional programming and strive to build quality software.', github: '', name: 'ZEIT.IO', url: 'https://zeit.io'},
+		{cat: $author$project$Companies$Ecommerce, desc: 'Offices in Minneapolis, MN and Salt Lake City, UT. Ecommerce CRM. We have a large and growing Elm code base and several developers who are excited about Elm.', github: 'https://github.com/DripEmail/', name: 'Drip', url: 'https://drip.com'},
+		{cat: $author$project$Companies$Ecommerce, desc: 'Global electronic commerce and Internet company based in Japan. [Post about Elm at Rakuten](https://dev.to/lucamug/elm-6m8).', github: 'https://rakutentech.github.io/', name: 'Rakuten', url: 'https://global.rakuten.com/corp/'},
+		{cat: $author$project$Companies$Ecommerce, desc: 'Based in Singapore, Zalora is the leading fashion e-commerce shop in Southeast Asia. We utilize Elm for our shop\'s catalog, improving the customer\'s experience when shopping with us.', github: '', name: 'Zalora', url: 'https://zalora.com/'},
+		{cat: $author$project$Companies$Ecommerce, desc: 'Bellroy is an Australian accessories brand making carry goods, including bags, folios, wallets, pouches, phone cases, and key covers. [Post about Elm at Bellroy](http://nonullpointers.com/posts/2019-05-28-side-effects-of-elm-in-production.html).', github: '', name: 'Bellroy', url: 'https://bellroy.com/'},
+		{cat: $author$project$Companies$Education, desc: 'Learn math and science through hands-on, interactive problem solving. Most of our interactives are written in Elm! We\'re headquartered in San Francisco, CA but have folks all over the US, Canada and remote. Journey to building \"Diagrammar\", Brilliant.org\'s interactive diagram tool in Elm: https://youtu.be/gT9Xu-ctNqI by Pontus Granström [@pnutus](https://github.com/pnutus) (Strange Loop 2022)', github: 'https://github.com/orgs/brilliantorg/repositories?language=elm', name: 'Brilliant', url: 'https://www.brilliant.org/'},
+		{cat: $author$project$Companies$Education, desc: 'BPS is a network of Hungarian micro schools that promote an environment in which children become naturally equipped with the mindset and skills needed to lead a happy life. The internal educational platform used by teachers, students and parents are built with Elm.', github: '', name: 'Budapest School', url: 'https://budapestschool.org/en/'},
+		{cat: $author$project$Companies$Education, desc: '([Blog](https://medium.com/espark-engineering-blog/), We help teachers in public schools provide fun, differentiated, and measurably effective lessons for their K-8 students. eSpark is proud to use and support Elm. Many of the organizers of the [Elm in the Spring](https://elminthespring.org) conference are part of the eSpark team, headquartered in Chicago and San Francisco (alongside remote locations).', github: 'https://github.com/espark/', name: 'eSpark', url: 'https://www.esparklearning.com'},
+		{cat: $author$project$Companies$Education, desc: 'We\'re on a mission to find the best way to learn in a digital world.', github: 'https://github.com/getmimo', name: 'Mimo', url: 'https://getmimo.com'},
+		{cat: $author$project$Companies$Education, desc: 'NoRedInk provide a language learning platform for children. Evan Czaplicki, the creator of Elm, worked at NoRedInk. [Post about Elm at NoRedInk](https://juliu.is/elm-at-noredink/).', github: 'https://github.com/NoRedInk', name: 'NoRedInk', url: 'https://www.noredink.com/'},
+		{cat: $author$project$Companies$Education, desc: 'Roompact is a Chicago-based company that makes a residential education, learning, and engagement platform used by university residence life departments.', github: '', name: 'Roompact', url: 'https://roompact.com/'},
+		{cat: $author$project$Companies$Education, desc: 'Watermark provides educational intelligence software to help higher ed institutions break down data silos, demonstrate quality, and improve student outcomes. Headquartered in New York with offices in Austin, Denver, Milwaukee, Portland (ME), and Mohali (India).', github: '', name: 'Watermark', url: 'https://www.watermarkinsights.com/'},
+		{cat: $author$project$Companies$Electronics, desc: 'CircuitHub provide on demand electronics manufacturing with instant quotes.', github: 'https://github.com/circuithub', name: 'CircuitHub', url: 'https://circuithub.com/'},
+		{cat: $author$project$Companies$FieldMarketing, desc: 'PINATA is powerful and easy-to-use software, purpose-built for the consumer brand industry to manage tasks and goals, measure outcomes, and maximize ROI. HQ in NYC, remote-friendly engineering team. All new front-end code is written in Elm.', github: 'https://github.com/pinata-llc', name: 'PINATA', url: 'https://www.gopinata.com/'},
+		{cat: $author$project$Companies$FinTech, desc: 'Basiq is the best aggregation platform for acquiring financial data. We provide secure access to hundreds of financial institutions through a simple set of RESTful APIs.', github: 'https://github.com/basiqio', name: 'Basiq', url: 'https://basiq.io/'},
+		{cat: $author$project$Companies$FinTech, desc: 'Washington DC, USA - Caribou allows customers to take control of their car payments by refinancing their auto loans. We also allow customers to shop for car insurance through our insurance platform which is built in Elm.', github: 'https://github.com/caribou-oss', name: 'Caribou', url: 'https://www.caribou.com/'},
+		{cat: $author$project$Companies$FinTech, desc: 'is the world leader in enterprise financial crime prevention for fraud and anti-money laundering. Featurespace invented Adaptive Behavioral Analytics and Automated Deep Behavioral Networks, both of which are available through\u202F the ARIC platform, a real-time machine learning software that risk scores millions of events each second in more than 180 countries. The company [chooses](https://www.youtube.com/watch?v=0AosqGTEa0Q) to build its user interface with Elm, and with over 300k lines of code it is one of the largest users of Elm in the world.', github: 'https://github.com/Featurespace', name: 'Featurespace', url: 'http://www.featurespace.com/'},
+		{cat: $author$project$Companies$FinTech, desc: 'FörsäkringsGirot is a Swedish company that helps major companies manage their employee pensions, and ensures everyone gets paid correctly.', github: '', name: 'FörsäkringsGirot', url: 'https://www.fgirot.se/'},
+		{cat: $author$project$Companies$FinTech, desc: 'Zettle is a one-stop shop for cutting-edge commerce tools — offering everything you need to take quick payments, ease day-to-day management, and get the funding to grow.', github: 'https://github.com/iZettle', name: 'Zettle', url: 'https://www.zettle.com'},
+		{cat: $author$project$Companies$FinTech, desc: 'Boston USA - MackeyRMS is a SaaS-based research management platform engineered to optimize the way analysts and portfolio managers generate, share, debate and act on investment research conducted for actively managed portfolios. Relied upon as a single system of record for research supporting the investment process, MackeyRMS is used by many of the world’s leading investment managers to organize key investment workflows, engender trust from investors, and streamline regulatory and compliance oversight.', github: 'https://github.com/MackeyRMS', name: 'Verity', url: 'https://verityplatform.com/'},
+		{cat: $author$project$Companies$FinTech, desc: 'Copenhagen Denmark - Smallbrooks sell Saas crowdfunding platforms. Most of our user clients are written in Elm and we have 150.000+ lines of Elm code in production. We have fun, so come work for us. We are fans of functional programming and use Scala on the backend and NixOS as dev environment.', github: '', name: 'Smallbrooks', url: 'https://www.smallbrooks.com'},
+		{cat: $author$project$Companies$FinTech, desc: 'W&W (Munich) is a German language mobile application that organizes your finances. Beyond our app, we work on many exciting projects of personal finance management. A great deal of the front-end is written in elm.', github: 'https://github.com/treefin', name: 'W&W Interaction Solutions', url: 'https://www.ww-ag.com/de/ww-interaction-solutions'},
+		{cat: $author$project$Companies$Healthcare, desc: 'Dividat makes a small video game console with a large controller for fall prevention and other therapeutic applications. The client applications, signal processing and several games are implemented in Elm. HQ in Switzerland.', github: 'https://github.com/dividat', name: 'Dividat', url: 'https://www.dividat.com'},
+		{cat: $author$project$Companies$Healthcare, desc: 'Illuminate equips radiology departments with critical data to save time and money, improve quality and safety, monitor productivity and efficiency, and enhance diagnostic accuracy.', github: 'https://github.com/GoIlluminate', name: 'Illuminate', url: 'https://www.goilluminate.com'},
+		{cat: $author$project$Companies$Healthcare, desc: 'PHD specialises in comprehensive health insurance tech solutions for risk management in Private Health Funds. Based in Sydney. The primary app is 134k+ lines of Elm in front of a mixed C# / Kotlin backend.', github: 'https://github.com/Pacific-Health-Dynamics/', name: 'HAMBS', url: 'https://www.hambs.com.au/'},
+		{cat: $author$project$Companies$Healthcare, desc: '([Blog](https://engineering.smrxt.com/)) - Nomi’s medication adherence system, Nomi, records patient medication behavior as it happens. By using real-time insights, the system reinforces positive behavior and intervenes to help patients take their medication and continue their treatment.', github: '', name: 'Nomi', url: 'https://nomiadherence.com/'},
+		{cat: $author$project$Companies$Healthcare, desc: 'Elm powers Chattanooga, Tennessee USA-based VisuWell\'s video conferencing (telemedicine) user interface.', github: 'https://github.com/wecounsel', name: 'Hatch', url: 'https://hatchcare.com/'},
+		{cat: $author$project$Companies$HumanResources, desc: 'Culture Amp makes it easy to collect, understand and act on employee feedback. Based in Melbourne with offices in San Francisco, New York, Palo Alto, and London.', github: 'https://github.com/cultureamp', name: 'Culture Amp', url: 'https://cultureamp.com'},
+		{cat: $author$project$Companies$HumanResources, desc: 'TruQu provide a HR solution to collect and analyze feedback, giving employees control over their own development.', github: 'https://github.com/truqu', name: 'TruQu', url: 'https://truqu.com/'},
+		{cat: $author$project$Companies$Insurance, desc: 'Acko is an Insurance company from India with over 20 million customers', github: 'https://github.com/ackotech', name: 'ACKO', url: 'https://www.acko.com/'},
+		{cat: $author$project$Companies$Insurance, desc: 'Corvus builds Smart Commercial Insurance Products: policies built on data-driven underwriting (using Elm, Elixir, and Python). Based in Boston, with a flock that spans throughout the United States.', github: 'https://github.com/corvusinsurance/', name: 'Corvus', url: 'https://www.corvusinsurance.com/'},
+		{cat: $author$project$Companies$Insurance, desc: 'Coya is a German digital insurance. Definitely different: 0% administrative burden. 0% paperwork.', github: 'https://github.com/coyainsurance/', name: 'Luko', url: 'https://de.luko.eu/'},
+		{cat: $author$project$Companies$Insurance, desc: 'Frende Forsikring is a Norwegian insurance company with over 250,000 customers', github: 'https://github.com/Frende', name: 'Forsikring', url: 'https://www.frende.no/'},
+		{cat: $author$project$Companies$Insurance, desc: 'Insurello is a Swedish InsurTech company that helps people get compensation from their insurance companies.', github: 'https://github.com/insurello', name: 'Insurello', url: 'https://insurello.se'},
+		{cat: $author$project$Companies$Insurance, desc: 'Prima Assicurazioni is an Italian insurance company with a focus on cutting edge technologies.', github: 'https://github.com/primait', name: 'Prima', url: 'https://www.prima.it/'},
+		{cat: $author$project$Companies$IoT, desc: '[Actcast](https://actcast.io/) is an IoT platform service which links events and data in the physical world to the Web with deep learning inference on the edge devices.', github: 'https://github.com/Idein', name: 'Idein', url: 'https://idein.jp/'},
+		{cat: $author$project$Companies$IT, desc: 'Blissfully is a SaaS management platform, providing visibility into an organizations SaaS apps\' usage and spend, along with powerful workflows to manage change. Headquarters in NYC, engineering is remote friendly, with 50% outside NYC.', github: 'https://github.com/Blissfully', name: 'Vendr', url: 'https://www.vendr.com/'},
+		{cat: $author$project$Companies$IT, desc: 'Secure platform to AWS cloud management and monitoring. Melbourne, Australia.', github: '', name: 'Stax', url: 'https://www.stax.io/'},
+		{cat: $author$project$Companies$LawTech, desc: 'Canada - Azara is a set of web and mobile tools that keeps your cannabis business compliant and make regulation documentation easy. Azara stays up to date with regulations and assists in reducing your risk of fines from State audits.', github: 'https://github.com/azara', name: 'Azara', url: 'https://www.azara.io/'},
+		{cat: $author$project$Companies$LawTech, desc: 'CalculoJuridico is a lawtech solution to help Brazilian lawyers calculate their client retirement options. Our new front-end is being rebuild from zero with Elm as of September 2018.', github: 'https://github.com/CalculoJuridico', name: 'CalculoJuridico', url: 'https://calculojuridico.com.br/'},
+		{cat: $author$project$Companies$LawTech, desc: 'Sweden - Scrive is the Nordic market leader in electronic signature solutions. Our whole product makes heavy use of functional programming in its implementation and recently we\'ve started to implement more of our frontend in Elm. We now have an admin console written entirely in Elm, and our electronic ID service exclusively uses elm for its frontend. We intend for the amount of elm in our codebase to increase even more over the next year.', github: 'https://github.com/scrive', name: 'Scrive', url: 'https://scrive.com'},
+		{cat: $author$project$Companies$LocationMarketing, desc: 'location based marketing technology', github: 'https://github.com/PinMeTo', name: 'PinMeTo', url: 'http://www.pinmeto.com'},
+		{cat: $author$project$Companies$LogManagement, desc: 'Humio is is a log management platform purpose-built for the scale of today’s data volumes by enabling users to Log Everything to Answer Anything, all in Real-Time. We are a distributed team, mostly in Denmark and the US. The front end is nearly 100% Elm (95k lines of Elm code).', github: 'https://github.com/humio', name: 'Crowdstrike', url: 'https://www.crowdstrike.com/'},
+		{cat: $author$project$Companies$Logistics, desc: 'Back office automation for freight forwarding companies, spinoff from HubTran. Fully remote international team, headquartered in Chicago.', github: 'https://github.com/bravotran', name: 'BravoTran', url: 'https://web.bravotran.com/'},
+		{cat: $author$project$Companies$Logistics, desc: 'Back office automation for transportation companies. Fully remote team, headquartered in Chicago.', github: 'https://github.com/hubtran', name: 'HubTran', url: 'https://engineering.hubtran.com'},
+		{cat: $author$project$Companies$Logistics, desc: 'Transportation management SaaS for 3PLs, brokers, and shippers.', github: '', name: 'Logistically', url: 'https://logisticallyinc.com'},
+		{cat: $author$project$Companies$Logistics, desc: 'Stowga is the world\'s warehousing marketplace. Based in London', github: 'https://github.com/stowga', name: 'Stowga', url: 'https://www.stowga.com'},
+		{cat: $author$project$Companies$MarketResearch, desc: 'GlobalWebIndex provides consumer profiling data to publishers, media agencies and marketers to help them understand their audiences. Remote engineering team, based in London.', github: '', name: 'GWI', url: 'https://www.gwi.com/'},
+		{cat: $author$project$Companies$MediaServices, desc: 'Hearken provides process consulting and supporting technology for media organizations to better engage with their audience.', github: 'https://github.com/wearehearken/', name: 'Hearken', url: 'https://www.wearehearken.com'},
+		{cat: $author$project$Companies$MediaServices, desc: 'Nomalab is a digital logistics platform for producers, content owners, distributors, broadcasters and publishers.', github: 'https://github.com/nomalab/', name: 'Nomalab', url: 'https://www.nomalab.com'},
+		{cat: $author$project$Companies$Planning, desc: 'IBM\'s [Decision Composer](https://decision-composer.ibm.com/) app makes heavy use of Elm. [Discourse announcement](https://discourse.elm-lang.org/t/ibm-releases-elm-powered-app/2364).', github: '', name: 'IBM', url: 'https://www.ibm.com/'},
+		{cat: $author$project$Companies$Planning, desc: 'Planning for daycare centers. Planning children and careworkers, invoicing parents.', github: 'https://github.com/kdvnet', name: 'KOVnet', url: 'http://www.kovnet.nl'},
+		{cat: $author$project$Companies$Planning, desc: 'Signup sheets for event planning and volunteer management.', github: 'https://github.com/wejoinin', name: 'Wejoinin', url: 'https://www.wejoinin.com'},
+		{cat: $author$project$Companies$ProjectManagement, desc: 'Pivotal Tracker provide a project management tool for agile software development teams.', github: 'https://github.com/pivotaltracker', name: 'Pivotal Tracker', url: 'https://www.pivotaltracker.com/'},
+		{cat: $author$project$Companies$ProjectManagement, desc: 'Video and photo documentation for the construction industry for automated tracking and recording of building site progress.', github: 'https://github.com/StructionSite', name: 'StructionSite', url: 'https://structionsite.com/'},
+		{cat: $author$project$Companies$ProductSampling, desc: 'SoPost is a product sampling platform. Nearly always hiring in Newcastle & Edinburgh (UK).', github: '', name: 'SoPost', url: 'https://www.sopost.com/'},
+		{cat: $author$project$Companies$Productivity, desc: 'Day One is a simple and beautiful way to archive your life.', github: 'https://github.com/bloom', name: 'Day One', url: 'https://www.dayoneapp.com/'},
+		{cat: $author$project$Companies$Productivity, desc: 'Make your online life easier by keeping all your favorite websites organized in a visually-appealing, personalized environment. Symbaloo is based in Delft, The Netherland.', github: 'https://github.com/symbaloo', name: 'Symbaloo', url: 'https://www.symbaloo.com'},
+		{cat: $author$project$Companies$RealEstate, desc: 'EXR is a residential and commercial real estate brokerage building a better experience for buying, selling, and leasing real estate.', github: 'https://github.com/exrny', name: 'EXR', url: 'https://www.exrny.com/'},
+		{cat: $author$project$Companies$RummageSales, desc: 'Spottt develops [MyBrocante](https://mybrocante.fr), an online tool for managing rummage sales.', github: 'https://github.com/spottt', name: 'Spottt', url: 'https://spottt.fr/'},
+		{cat: $author$project$Companies$Security, desc: 'Next DLP\'s mission is to build the next generation of cyber security - disrupting the data loss prevention (DLP) market with our innovative, cloud native, ML powered platform. Office in London UK, with over half the frontend team working remotely.', github: '', name: 'Next DLP', url: 'https://www.nextdlp.com/'},
+		{cat: $author$project$Companies$Software, desc: 'Speech AI Platform for transcription and understanding. Deepgram is a distributed team.', github: 'https://github.com/deepgram', name: 'Deepgram', url: 'https://deepgram.com'},
+		{cat: $author$project$Companies$Software, desc: 'is a web native application platform that includes app hosting, public + private files, end-to-end encryption, and an account and authentication system. Developers can build and deploy apps using only client side tech -- including Elm. Users can use the [Drive app](https://drive.fission.codes) and authenticate using the [Auth lobby](https://auth.fission.codes/), both written in Elm. Fission is a distributed team, based in Vancouver, Canada, Nixa, Missouri, USA, and Ghent, Belgium.', github: 'https://github.com/fission-suite', name: 'Fission', url: 'https://fission.codes'},
+		{cat: $author$project$Companies$Software, desc: 'the world\'s second largest software company, has used Elm for the frontend of their [customer support system](https://github.com/jah2488/elm-companies/issues/36) since 2016. Microsoft\'s HQ is in Redmond, Washington, USA. The team that writes Elm is distributed. More detail on Elm at Microsoft in [Elm Town Podcast Episode 43](https://elmtown.simplecast.fm/it-just-goes-on-and-on).', github: 'https://github.com/Microsoft/elm-json-tree-view', name: 'Microsoft', url: 'https://www.microsoft.com'},
+		{cat: $author$project$Companies$Software, desc: 'is an open source functional programming language based on a simple idea with big implications: code is content-addressed and immutable. Unison uses Elm for [Unison Share](https://share.unison-lang.org/) (community hub) and the local UI that ships with the Unison Programming Language. Unison is a distributed team, based across North America.', github: 'https://github.com/unisonweb/codebase-ui', name: 'Unison', url: 'https://www.unisonweb.org/'},
+		{cat: $author$project$Companies$Travel, desc: 'Beautiful Destinations is the award-winning creative agency behind the largest travel community on social media.', github: 'https://github.com/BeautifulDestinations', name: 'Beautiful Destinations', url: 'http://www.beautifuldestinations.com/'},
+		{cat: $author$project$Companies$Travel, desc: 'We’re shaping the future of business travel with our award-winning corporate travel management and booking platform – built on the foundations of trust, choice and great people. Based in Birmingham, UK. Hiring remotely anywhere in the UK.', github: '', name: 'Travel Perk', url: 'https://www.travelperk.com/'},
+		{cat: $author$project$Companies$Travel, desc: 'National airline of the United Arab Emirates.', github: '', name: 'Emirates', url: 'https://www.emirates.com/'},
+		{cat: $author$project$Companies$Travel, desc: 'one of the biggest shipping companies currently operating in the Baltic Sea, with cruise and shuttle ships traveling between Tallinn, Helsinki, Stockholm, Riga and other major cities in the region.', github: 'https://github.com/Tallink', name: 'Tallink & Silja Line', url: 'https://www.tallink.com/'},
+		{cat: $author$project$Companies$Travel, desc: 'Norway\'s national bus and railway company. The majority of the website and ticket booking is written in Elm.', github: 'https://github.com/nsbno', name: 'Vy', url: 'https://www.vy.no/'},
+		{cat: $author$project$Companies$Automotive, desc: '[Talk about Elm at Ford (Elm Conf)](https://www.youtube.com/watch?v=5WVXCy1Q88o \"Facilitating Technology Change Through Cultural Change - Grant Maki\").', github: '', name: 'Ford', url: 'https://www.ford.com/'},
+		{cat: $author$project$Companies$Music, desc: 'Ableton makes unique software and hardware for music creation and performance. They use Elm for an application to [learn music](https://twitter.com/abletondev/status/861580662620508160).', github: '', name: 'Ableton', url: 'https://www.ableton.com/en/about/'},
+		{cat: $author$project$Companies$Security, desc: 'Ava Video Security is a global technology company that protects people and assets with proactive video security and human-centric data loss protection. Offices in UK, Norway and USA.', github: '', name: 'Ava', url: 'https://www.avasecurity.com/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Mind Gym', url: 'https://themindgym.com/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Studyplus For School', url: 'https://for-school.studyplus.co.jp/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Talend', url: 'https://www.talend.com/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Consensys', url: 'https://consensys.net/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Improbable', url: 'https://www.improbable.io/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'TWave', url: 'https://twave.io/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Vnator', url: 'https://www.vnator.tech/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Scoville', url: 'https://scoville.jp/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Splink', url: 'https://www.splinkns.com/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Serenytics', url: 'https://www.serenytics.com/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Astrosat', url: 'https://astrosat.net/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Phrase', url: 'https://phrase.com/lp/translation-management-system/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'AJR International', url: 'https://ajrintl.com/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'NZ Herald', url: 'https://www.nzherald.co.nz/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Practle', url: 'https://practle.io/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Tyler', url: 'https://www.tylertech.com/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Cornell Tech', url: 'https://s.tech.cornell.edu/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Innovation through understanding', url: 'https://hendrikbelitz.de/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'CN Group CZ', url: 'https://www.cngroup.dk/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Jobvite', url: 'https://www.jobvite.com/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Blue Fog Training', url: 'https://bluedogtraining.com.au/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Novabench', url: 'https://novabench.com/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Scrivito', url: 'https://www.scrivito.com/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Alma', url: 'https://almapay.com/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'iwantmyname', url: 'https://iwantmyname.com/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Barmenia', url: 'https://meine-barmenia.de/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'CoinTracking', url: 'https://cointracking.info/'}
+	]);
+var $author$project$Year2022$JobOffers$data = _List_fromArray(
+	[
+		{careers: 'https://www.metronomics.com/careers', name: 'Metronome Growth Systems', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-196-982352', url: 'https://www.metronomics.com/'},
+		{careers: 'https://www.gwi.com/careers', name: 'GWI', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-196-982352', url: 'https://www.gwi.com/'},
+		{careers: 'https://www.geora.io/careers', name: 'Geora', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-197-993384', url: 'https://www.geora.io/'},
+		{careers: 'https://permutive.com/careers/', name: 'Permutive', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-197-993384', url: 'https://permutive.com/'},
+		{careers: 'https://www.carerev.com/carerev-careers', name: 'CareRev', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-198-1006112', url: 'https://www.carerev.com/'},
+		{careers: 'https://www.avetta.com/careers', name: 'Avetta', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-199-1017639', url: 'https://www.avetta.com/'},
+		{careers: 'https://www.corvusinsurance.com/culture-and-careers-at-corvus', name: 'Corvus', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-200-1029618', url: 'https://www.corvusinsurance.com/'},
+		{careers: 'https://www.midwayusa.com/jobs/', name: 'MidwayUSA', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-200-1029618', url: 'https://www.midwayusa.com/'},
+		{careers: 'https://careers.veeva.com/', name: 'Veeva', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-201-1041169', url: 'https://veeva.com/'},
+		{careers: '', name: 'Logistically', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-203-1064828', url: 'https://www.logisticallyinc.com/'},
+		{careers: 'https://field33.com/jobs', name: 'Field 33', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-205-1086950', url: 'https://field33.com/'},
+		{careers: 'https://www.caribou.com/careers', name: 'Caribou', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-208-1121427', url: 'https://www.caribou.com/'},
+		{careers: 'https://www.bernoullifinance.com/work-with-us', name: 'Bernoulli Finance', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-214-1183681', url: 'https://www.bernoullifinance.com/'},
+		{careers: 'https://structionsite.com/about-us/careers', name: 'Structionsite', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-216-1203438', url: 'https://structionsite.com/'},
+		{careers: 'https://www.activestate.com/company/careers/', name: 'ActiveState', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-216-1203438', url: 'https://www.activestate.com/'},
+		{careers: 'https://www.vendr.com/careers', name: 'Vendr', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-218-1223344', url: 'https://www.vendr.com/'},
+		{careers: 'https://www.powerreviews.com/about/careers/', name: 'PowerReviews', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-220-1245309', url: 'https://www.powerreviews.com/'},
+		{careers: 'https://contact.hellorse.fr/qui-sommes-nous/recrutement', name: 'hello RSE', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-222-1264086', url: 'https://hellorse.fr/'},
+		{careers: 'https://www.esparklearning.com/company/careers', name: 'eSpark', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-223-1273732', url: 'https://www.esparklearning.com/'},
+		{careers: 'https://career.savr.com/', name: 'SAVR', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-229-1334833', url: 'https://savr.com/'},
+		{careers: '', name: 'Buildr', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-231-1359418', url: 'https://buildr.com/'},
+		{careers: '', name: 'Generative', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-232-1370195', url: 'https://generative.vision/'},
+		{careers: 'https://www.gopinata.info/jobs', name: 'PINATA', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-233-1381552', url: 'https://www.gopinata.com/'},
+		{careers: 'https://www.genesys.com/company/careers', name: 'Genesys', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-235-1403846', url: 'https://www.genesys.com/'},
+		{careers: 'https://themindgym.com/careers/jobs', name: 'MindGym', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-235-1403846', url: 'https://themindgym.com/'},
+		{careers: 'https://www.crowdstrike.com/careers/', name: 'CrowdStrike', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-238-1436712', url: 'https://www.crowdstrike.com/'},
+		{careers: 'https://withflint.com/join/', name: 'Flint', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-243', url: 'https://withflint.com/'},
+		{careers: 'https://raccareers.com/acima/', name: 'Acima', source: 'https://www.elmweekly.nl/p/elm-weekly-issue-246', url: 'https://www.acima.com/'}
+	]);
+var $elm$core$String$toLower = _String_toLower;
+var $author$project$Main2022$companiesToAdd = A3(
+	$elm$core$List$foldl,
+	F2(
+		function (jobOffer, acc) {
+			var f = A2(
+				$elm$core$List$filter,
+				function (company) {
+					return _Utils_eq(
+						$elm$core$String$toLower(jobOffer.name),
+						$elm$core$String$toLower(company.name));
+				},
+				$author$project$Companies$data);
+			if (!$elm$core$List$length(f)) {
+				var _v0 = A2($elm$core$Debug$log, 'Adding', jobOffer.name);
+				return A2(
+					$elm$core$List$cons,
+					{cat: $author$project$Companies$Unkown, desc: '', github: '', name: jobOffer.name, url: jobOffer.url},
+					acc);
+			} else {
+				return acc;
+			}
+		}),
+	_List_Nil,
+	$author$project$Year2022$JobOffers$data);
+var $elm$core$List$sortBy = _List_sortBy;
+var $author$project$Main2022$jobOffers = A2(
+	$elm$core$String$join,
+	'\n\n',
+	_List_fromArray(
+		[
+			'\n\n## Some of the companies that hired Elm developers in 2022',
+			A2(
+			$elm$core$String$join,
+			'\n\n',
+			A2(
+				$elm$core$List$map,
+				function (item) {
+					var info = _Utils_ap(
+						$elm$core$String$isEmpty(item.careers) ? _List_Nil : _List_fromArray(
+							['[Careers](' + (item.careers + ')')]),
+						$elm$core$String$isEmpty(item.source) ? _List_Nil : _List_fromArray(
+							['[Info](' + (item.source + ')')]));
+					return '* [**' + (item.name + ('**](' + (item.url + (') (' + (A2($elm$core$String$join, ', ', info) + ')')))));
+				},
+				A2(
+					$elm$core$List$sortBy,
+					function (item) {
+						return $elm$core$String$toLower(item.name);
+					},
+					$author$project$Year2022$JobOffers$data))),
+			'## Partial list of companies that use Elm',
+			A2(
+			$elm$core$String$join,
+			' ⬩ ',
+			A2(
+				$elm$core$List$map,
+				function (item) {
+					return ' [' + (item.name + ('](' + (item.url + ')')));
+				},
+				A2(
+					$elm$core$List$sortBy,
+					function (item) {
+						return $elm$core$String$toLower(item.name);
+					},
+					_Utils_ap($author$project$Companies$data, $author$project$Main2022$companiesToAdd))))
+		]));
 var $mdgriffith$elm_ui$Internal$Model$OnlyDynamic = F2(
 	function (a, b) {
 		return {$: 'OnlyDynamic', a: a, b: b};
@@ -12451,7 +12707,6 @@ var $mdgriffith$elm_ui$Internal$Model$formatColorClass = function (_v0) {
 	var alpha = _v0.d;
 	return $mdgriffith$elm_ui$Internal$Model$floatClass(red) + ('-' + ($mdgriffith$elm_ui$Internal$Model$floatClass(green) + ('-' + ($mdgriffith$elm_ui$Internal$Model$floatClass(blue) + ('-' + $mdgriffith$elm_ui$Internal$Model$floatClass(alpha))))));
 };
-var $elm$core$String$toLower = _String_toLower;
 var $elm$core$String$words = _String_words;
 var $mdgriffith$elm_ui$Internal$Model$renderFontClassName = F2(
 	function (font, current) {
@@ -12631,7 +12886,6 @@ var $mdgriffith$elm_ui$Element$Font$size = function (i) {
 		$mdgriffith$elm_ui$Internal$Flag$fontSize,
 		$mdgriffith$elm_ui$Internal$Model$FontSize(i));
 };
-var $elm$core$List$sortBy = _List_sortBy;
 var $mdgriffith$elm_ui$Internal$Model$SpacingStyle = F3(
 	function (a, b, c) {
 		return {$: 'SpacingStyle', a: a, b: b, c: c};
@@ -21756,7 +22010,7 @@ var $author$project$Helpers$MarkdownElmUi$stringToElement = function (markdownIn
 var $elm$html$Html$textarea = _VirtualDom_node('textarea');
 var $elm$html$Html$Attributes$value = $elm$html$Html$Attributes$stringProperty('value');
 var $author$project$Main2022$main = function () {
-	var markdown = $author$project$Main2022$header + ('\n\n' + A2(
+	var markdown = $author$project$Main2022$header + ('\n\n' + (A2(
 		$elm$core$String$join,
 		'\n\n',
 		A2(
@@ -21799,7 +22053,7 @@ var $author$project$Main2022$main = function () {
 						},
 						A2($elm$core$List$sortBy, $elm$core$Tuple$first, data)))));
 			},
-			A2($elm$core$List$range, 1, 12))));
+			A2($elm$core$List$range, 1, 12))) + ($author$project$Main2022$jobOffers + '\n\n**This is all. See you in 2024!**\n\n❤️')));
 	var catData = $author$project$Main2022$categorizedData;
 	return A2(
 		$mdgriffith$elm_ui$Element$layout,
