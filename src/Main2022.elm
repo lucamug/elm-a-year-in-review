@@ -1,5 +1,6 @@
 module Main2022 exposing (..)
 
+import Companies
 import Dict
 import Element exposing (..)
 import Element.Font as Font
@@ -10,6 +11,7 @@ import Iso8601
 import Time
 import Year2022.ElmRadio
 import Year2022.ElmWeekly
+import Year2022.JobOffers
 import Year2022.Others
 import Year2022.Youtube
 
@@ -154,6 +156,7 @@ main =
                             )
                             (List.range 1 12)
                    )
+                ++ jobOffers
 
         catData =
             categorizedData
@@ -172,6 +175,18 @@ main =
                         ]
                         []
             ]
+
+
+jobOffers : String
+jobOffers =
+    String.join "\n\n"
+        [ "\n\n## Partial list of companies that hired Elm developers in 2022"
+        , String.join "\n\n"
+            (List.map (\item -> "* [" ++ item.name ++ "](" ++ item.url ++ ")") (List.sortBy (\item -> String.toLower item.name) Year2022.JobOffers.data))
+        , "## Partial list of companies that use Elm"
+        , String.join " ⬩ "
+            (List.map (\item -> " [" ++ item.name ++ "](" ++ item.url ++ ")") (List.sortBy (\item -> String.toLower item.name) Companies.data))
+        ]
 
 
 dataElmRadioToString : Year2022.ElmRadio.Data -> String
