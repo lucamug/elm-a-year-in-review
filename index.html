@@ -4993,7 +4993,10 @@ var $author$project$Year2022$Others$data = _List_fromArray(
 		{by: 'Jakob Ferdinand Wegenschimmel', date: '2022-11-17', descriptions: 'A presentation written in elm-land that anyone can use. [Code](https://github.com/JakobFerdinand/elm-pres), [Live presentation](https://elm-pres.jakobferdinand.at/)', image: 'presentation-jakob.png', title: 'Elm, If it compiles it works!', type_: $author$project$Year2022$Others$Presentation, url: 'https://elm-pres.jakobferdinand.at/'},
 		{by: 'Adrien Dulac', date: '2022-12-01', descriptions: 'Fractale is part of the “productivity” or “asynchronous communication” tools family. As a developer, I am satisfied with the organization and collaboration tools built around Git, such as Github/Gitlab/Gitea. But for human beings who are not developers or strangers to these tools, they remain too complex and ill adapted...', image: 'fractale.png', title: 'Fractale', type_: $author$project$Year2022$Others$Project, url: 'https://discourse.elm-lang.org/t/announcing-fractale/8792'},
 		{by: 'Jeremy H. Brown', date: '2022-10-12', descriptions: '', image: 'manage.png', title: 'Yet another way to manage shared state in Elm SPAs', type_: $author$project$Year2022$Others$Presentation, url: 'https://docs.google.com/presentation/d/1nntLMrGaLsCOV83DOPvW7c0aemFoApIszuhRzoThYrs/'},
-		{by: 'Jeremy H. Brown', date: '2022-11-30', descriptions: '', image: 'hiding.png', title: 'Thought experiment: Hiding implementation types in Elm', type_: $author$project$Year2022$Others$Presentation, url: 'https://docs.google.com/presentation/d/1lTgRyGbswb2ozynYckLUZja_FY5RGlBnfJGduOUsYGc/'}
+		{by: 'Jeremy H. Brown', date: '2022-11-30', descriptions: '', image: 'hiding.png', title: 'Thought experiment: Hiding implementation types in Elm', type_: $author$project$Year2022$Others$Presentation, url: 'https://docs.google.com/presentation/d/1lTgRyGbswb2ozynYckLUZja_FY5RGlBnfJGduOUsYGc/'},
+		{by: 'Ryan Haskell-Glatz', date: '2022-08-29', descriptions: 'Ryan Haskell-Glatz announced the release of the latest alpha release of @ElmLand_ with a brand new @vite_js powered website, a guide designed for JS folks new to @elmlang, a dark mode AND a cool glowing thingie', image: 'ryan.jpeg', title: 'Alpha release of ElmLand', type_: $author$project$Year2022$Others$Announcement, url: 'https://twitter.com/rhg_dev/status/1564083453792030724'},
+		{by: 'Georges Boris', date: '2022-11-30', descriptions: 'Elm-Widget, a collection of stateless widgets designed to make your experience building elm applications easier and even more delightful, was annunced at the Elm Remote Meetup', image: 'elm-widgets.png', title: 'Elm-Widgets', type_: $author$project$Year2022$Others$Announcement, url: 'https://elm-widgets.netlify.app/overview'},
+		{by: 'Andreas Lundkvist', date: '2022-07-27', descriptions: 'A search app for the tabletop RPG Pathfinder 2nd Edition called Nethys Search. Repo available at https://github.com/galdiuz/nethys-search. App available at: https://2e.aonprd.com/Search.aspx', image: 'Nethys.png', title: 'Nethys Search, a search engine for Archives of Nethys', type_: $author$project$Year2022$Others$Project, url: 'https://www.reddit.com/r/Pathfinder2e/comments/w97ryi/archives_of_nethys_pf2e_dark_archive_pathfinder/'}
 	]);
 var $author$project$Year2022$Youtube$data = _List_fromArray(
 	[
@@ -12152,6 +12155,7 @@ var $mdgriffith$elm_ui$Element$column = F2(
 var $author$project$Main2022$imageMd = function (data) {
 	return '\n\n[![' + (data.title + ('](' + (data.image + (' \"' + (data.title + ('\")](' + (data.url + ')')))))));
 };
+var $author$project$Main2022$imagesLocation = true ? 'https://lucamug.github.io/elm-a-year-in-review/images2022/' : 'images2022/';
 var $author$project$Main2022$link = function (data) {
 	return '[' + (data.title + ('](' + (data.url + ')')));
 };
@@ -12160,7 +12164,7 @@ var $author$project$Main2022$dataElmRadioToString = function (data) {
 	var title = 'Elm Radio episode #' + ($elm$core$String$fromInt(data.episode) + (' - ' + data.title));
 	return $author$project$Main2022$link(
 		{title: title, url: url}) + (' \"' + (data.descritpion + ('\"' + $author$project$Main2022$imageMd(
-		{image: 'images2022/elm-radio.png', title: title, url: url}))));
+		{image: $author$project$Main2022$imagesLocation + 'elm-radio.png', title: title, url: url}))));
 };
 var $author$project$Main2022$dataElmWeeklyToString = function (data) {
 	var url = 'https://www.elmweekly.nl/p/elm-weekly-issue-' + data.id;
@@ -12207,7 +12211,11 @@ var $author$project$Main2022$typeToString = function (type_) {
 var $author$project$Main2022$dataOthersToString = function (data) {
 	return $author$project$Main2022$typeToString(data.type_) + (' ' + ($author$project$Main2022$link(
 		{title: data.title, url: data.url}) + (A2($author$project$Main2022$addBy, data.by, data.title) + ($author$project$Main2022$addDescription(data.descriptions) + ($elm$core$String$isEmpty(data.image) ? '' : $author$project$Main2022$imageMd(
-		{image: 'images2022/' + data.image, title: data.title, url: data.url}))))));
+		{
+			image: _Utils_ap($author$project$Main2022$imagesLocation, data.image),
+			title: data.title,
+			url: data.url
+		}))))));
 };
 var $author$project$Main2022$dataYoutubeToString = function (data) {
 	var url = 'https://www.youtube.com/watch?v=' + data.id;
@@ -12480,7 +12488,8 @@ var $author$project$Companies$data = _List_fromArray(
 		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Alma', url: 'https://almapay.com/'},
 		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'iwantmyname', url: 'https://iwantmyname.com/'},
 		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Barmenia', url: 'https://meine-barmenia.de/'},
-		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'CoinTracking', url: 'https://cointracking.info/'}
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'CoinTracking', url: 'https://cointracking.info/'},
+		{cat: $author$project$Companies$Unkown, desc: '', github: '', name: 'Uncover', url: 'https://www.uncover.co/'}
 	]);
 var $author$project$Year2022$JobOffers$data = _List_fromArray(
 	[
@@ -12579,7 +12588,9 @@ var $author$project$Main2022$jobOffers = A2(
 					function (item) {
 						return $elm$core$String$toLower(item.name);
 					},
-					_Utils_ap($author$project$Companies$data, $author$project$Main2022$companiesToAdd))))
+					_Utils_ap($author$project$Companies$data, $author$project$Main2022$companiesToAdd)))),
+			'This list is extracted from several sources, such as [elm-companies](https://github.com/jah2488/elm-companies), [Stackshare.io](https://stackshare.io/elm), blog posts, videos, talks, atc.',
+			'============='
 		]));
 var $mdgriffith$elm_ui$Internal$Model$OnlyDynamic = F2(
 	function (a, b) {
@@ -22079,7 +22090,7 @@ var $author$project$Main2022$main = function () {
 						[
 							$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$fill)
 						]),
-					{description: '', src: 'images2022/cover2022.jpg'}),
+					{description: '', src: $author$project$Main2022$imagesLocation + 'cover2022.jpg'}),
 					A2(
 					$mdgriffith$elm_ui$Element$el,
 					_List_fromArray(

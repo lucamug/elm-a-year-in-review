@@ -31,6 +31,14 @@ type alias ParsedDate =
     }
 
 
+imagesLocation =
+    if True then
+        "https://lucamug.github.io/elm-a-year-in-review/images2022/"
+
+    else
+        "images2022/"
+
+
 categorizedData : Dict.Dict Int (List ( Int, Data ))
 categorizedData =
     List.foldl
@@ -164,7 +172,7 @@ main =
     in
     layout [ padding 20 ] <|
         column [ width (maximum 700 <| fill), centerX, spacing 50 ]
-            [ image [ width fill ] { src = "images2022/cover2022.jpg", description = "" }
+            [ image [ width fill ] { src = imagesLocation ++ "cover2022.jpg", description = "" }
             , el [ Font.size 30, centerX ] <| text "Draft - Elm 2022, a year in review"
             , Helpers.MarkdownElmUi.stringToElement markdown
             , el [ Font.size 30 ] <| text "Markdown"
@@ -280,7 +288,7 @@ dataElmRadioToString data =
         ++ " \""
         ++ data.descritpion
         ++ "\""
-        ++ imageMd { image = "images2022/elm-radio.png", title = title, url = url }
+        ++ imageMd { image = imagesLocation ++ "elm-radio.png", title = title, url = url }
 
 
 dataElmWeeklyToString : Year2022.ElmWeekly.Data -> String
@@ -321,7 +329,7 @@ dataOthersToString data =
             else
                 imageMd
                     { title = data.title
-                    , image = "images2022/" ++ data.image
+                    , image = imagesLocation ++ data.image
                     , url = data.url
                     }
            )
