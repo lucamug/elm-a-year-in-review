@@ -611,7 +611,7 @@ title: Elm 2022, a year in review
 published: false
 description: A list of contributions made in the year 2022 to the Elm  language. From blog posts to videos, from tutorials to demos.
 tags: elm, webdev, frontend
-cover_image: """ ++ imagesLocation ++ """cover2022.jpeg
+cover_image: """ ++ imagesLocation ++ """cover2022-2.jpeg
 ---"""
 
 
