@@ -1226,6 +1226,14 @@ data =
       , image = "elm-widgets.png"
       , type_ = Announcement
       }
+    , { descriptions = "A search app for the tabletop RPG Pathfinder 2nd Edition called Nethys Search. Repo available at https://github.com/galdiuz/nethys-search. App available at: https://2e.aonprd.com/Search.aspx"
+      , url = "https://www.reddit.com/r/Pathfinder2e/comments/w97ryi/archives_of_nethys_pf2e_dark_archive_pathfinder/"
+      , title = "Nethys Search, a search engine for Archives of Nethys"
+      , by = "Andreas Lundkvist"
+      , date = "2022-07-27"
+      , image = "Nethys.png"
+      , type_ = Project
+      }
 
     -- , { descriptions = ""
     --   , url = ""
