@@ -9,6 +9,10 @@ https://dev.to/lucamug/elm-2021-a-year-in-review-4pho
 
 https://lucamug.github.io/elm-a-year-in-review/
 
+## Images
+
+https://lucamug.github.io/elm-a-year-in-review/images2022/2022-01-30-wordle-luca-mugnaini.webp
+
 ## How to contribute
 
 You can either create an issue or a Pull Request.
