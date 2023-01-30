@@ -252,6 +252,8 @@ jobOffers =
         , "## Partial list of companies that use Elm"
         , String.join " ⬩ "
             (List.map (\item -> " [" ++ item.name ++ "](" ++ item.url ++ ")") (List.sortBy (\item -> String.toLower item.name) (Companies.data ++ companiesToAdd)))
+        , "This list is extracted from several sources, such as [elm-companies](https://github.com/jah2488/elm-companies), [Stackshare.io](https://stackshare.io/elm), blog posts, videos, talks, atc."
+        , "============="
         ]
 
 

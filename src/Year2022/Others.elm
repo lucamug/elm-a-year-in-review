@@ -1210,6 +1210,22 @@ data =
       , image = "hiding.png"
       , type_ = Presentation
       }
+    , { descriptions = "Ryan Haskell-Glatz announced the release of the latest alpha release of @ElmLand_ with a brand new @vite_js powered website, a guide designed for JS folks new to @elmlang, a dark mode AND a cool glowing thingie"
+      , url = "https://twitter.com/rhg_dev/status/1564083453792030724"
+      , title = "Alpha release of ElmLand"
+      , by = "Ryan Haskell-Glatz"
+      , date = "2022-08-29"
+      , image = "ryan.jpeg"
+      , type_ = Announcement
+      }
+    , { descriptions = "Elm-Widget, a collection of stateless widgets designed to make your experience building elm applications easier and even more delightful, was annunced at the Elm Remote Meetup"
+      , url = "https://elm-widgets.netlify.app/overview"
+      , title = "Elm-Widgets"
+      , by = "Georges Boris"
+      , date = "2022-11-30"
+      , image = "elm-widgets.png"
+      , type_ = Announcement
+      }
 
     -- , { descriptions = ""
     --   , url = ""
