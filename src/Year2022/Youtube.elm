@@ -491,15 +491,15 @@ data =
       , datePublished = "2022-11-12"
       , dateEvent = ""
       }
+    , { descriptions = "Code on Github: https://github.com/kutyel/elm-wordle"
+      , id = "E9Yf7l_Iff4"
+      , title = "Implementing WORDLE in Elm in under 82 minutes!"
+      , by = "Flavio Corpa"
+      , event = ""
+      , datePublished = "2022-02-03"
+      , dateEvent = ""
+      }
 
-    -- , { descriptions = ""
-    --   , id = ""
-    --   , title = ""
-    --   , by = ""
-    --   , event = ""
-    --   , datePublished = "2022-"
-    --   , dateEvent = ""
-    --   }
     -- , { descriptions = ""
     --   , id = ""
     --   , title = ""
