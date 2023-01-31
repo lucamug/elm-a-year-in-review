@@ -634,7 +634,7 @@ If you want to keep up with Elm's related news:
 * Check [discourse.elm-lang.org](https://discourse.elm-lang.org/)
 * Follow [@elmlang on Twitter](https://twitter.com/elmlang)
 * Listen to the [Elm Radio podcast](https://elm-radio.com/)
-* Browse the [Elm-Craft website](https://elmcraft.org/)
+* Browse the [Elmcraft website](https://elmcraft.org/)
 * Check [Incremental Elm Discord](https://incrementalelm.com/chat/) for working on Elm open source projects
 
 You can also check the previous [Elm 2021, a year in review](https://dev.to/lucamug/elm-2021-a-year-in-review-4pho).
