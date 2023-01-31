@@ -145,4 +145,9 @@ data =
       , careers = "https://raccareers.com/acima/"
       , source = "https://www.elmweekly.nl/p/elm-weekly-issue-246"
       }
+    , { name = "Scrive"
+      , url = "https://www.scrive.com/"
+      , careers = "https://careers.scrive.com/"
+      , source = ""
+      }
     ]
