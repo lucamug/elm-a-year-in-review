@@ -370,14 +370,6 @@ data =
       , dateEvent = ""
       }
     , { descriptions = ""
-      , id = "9yCw_ut9Ik8"
-      , title = "Learning Elm while launching a project, good idea?"
-      , by = "Loïc Knuchel"
-      , event = "Elm Online Meetup"
-      , datePublished = "2022-02-05"
-      , dateEvent = ""
-      }
-    , { descriptions = ""
       , id = "-4lyp9pVKE0"
       , title = "Look Ma no graphics card! Software-based 3D rendering in Elm"
       , by = "Julian Antonielli"
