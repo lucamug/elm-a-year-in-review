@@ -730,6 +730,14 @@ data =
       , image = "sudoku.png"
       , type_ = Game
       }
+    , { descriptions = "Exosphere is an Elm application that delivers user-friendly, interactive access to OpenStack-based cloud systems"
+      , url = "https://itnews.iu.edu/articles/2022/IU-wins-300K-NSF-award-to-build-an-open-source-ecosystem-around-heavily-used-cloud-tool.php"
+      , title = "IU wins $300K NSF award to build an open-source ecosystem around heavily used cloud tool"
+      , by = "Chris Martin"
+      , date = "2022-09-07"
+      , image = ""
+      , type_ = Announcement
+      }
     , { descriptions = ""
       , url = "https://discourse.elm-lang.org/t/introducing-elm-watch-elm-make-in-watch-mode-fast-and-reliable/8653"
       , title = "Introducing elm-watch: elm make in watch mode. Fast and reliable"
