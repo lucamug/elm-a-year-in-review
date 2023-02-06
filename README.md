@@ -1,17 +1,11 @@
 # Elm, a year in review
 
+* 2021 Edition: https://dev.to/lucamug/elm-2021-a-year-in-review-4pho
+* 2022 Edition: https://dev.to/lucamug/elm-2022-a-year-in-review-33pp
 
-## Elm 2021, a year in review
-
-https://dev.to/lucamug/elm-2021-a-year-in-review-4pho
-
-## Elm 2023, a year in review - DRAFT
+## Draft
 
 https://lucamug.github.io/elm-a-year-in-review/
-
-## Images
-
-https://lucamug.github.io/elm-a-year-in-review/images2022/2022-01-30-wordle-luca-mugnaini.webp
 
 ## How to contribute
 
