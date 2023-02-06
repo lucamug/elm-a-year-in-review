@@ -730,12 +730,12 @@ data =
       , image = "sudoku.png"
       , type_ = Game
       }
-    , { descriptions = "Exosphere is an Elm application that delivers user-friendly, interactive access to OpenStack-based cloud systems"
+    , { descriptions = "Exosphere is a 30k lines-of-code Elm application that delivers user-friendly, interactive access to OpenStack-based cloud systems"
       , url = "https://itnews.iu.edu/articles/2022/IU-wins-300K-NSF-award-to-build-an-open-source-ecosystem-around-heavily-used-cloud-tool.php"
       , title = "IU wins $300K NSF award to build an open-source ecosystem around heavily used cloud tool"
       , by = "Chris Martin"
       , date = "2022-09-07"
-      , image = ""
+      , image = "exosphere.png"
       , type_ = Announcement
       }
     , { descriptions = ""
