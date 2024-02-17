@@ -7,6 +7,11 @@ type alias Data =
 
 data : List Data
 data =
+    []
+
+
+dataOld : List Data
+dataOld =
     [ { date = "2022-12-21", id = "244", issue = 244, description = "Articles and Discussion Testing Core-like Modules Martin Janiczek has started a new testing package for testing re-implementations of core modules. E.g…" }
     , { date = "2022-12-14", id = "243", issue = 243, description = "Articles and Discussion Gaining insight into your codebase with elm-review Jeroen dives into the 2nd part of the latest elm-review release and what new…" }
     , { date = "2022-12-07", id = "242", issue = 242, description = "First day on a new platform 🎉 So far the transition has gone smoothly, and hopefully that continues. If you or someone you know is looking to…" }

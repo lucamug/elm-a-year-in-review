@@ -14,6 +14,11 @@ type alias Data =
 
 data : List Data
 data =
+    []
+
+
+dataOld : List Data
+dataOld =
     --
     --
     -- From https://www.youtube.com/results?search_query=elmlang&sp=EgIIBQ%253D%253D

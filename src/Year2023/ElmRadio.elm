@@ -3,8 +3,7 @@ module Year2023.ElmRadio exposing (..)
 
 type alias Data =
     { date : String
-    , guests : List String
-    , descritpion : String
+    , description : String
     , episode : Int
     , title : String
     , id : String
@@ -13,30 +12,148 @@ type alias Data =
 
 data : List Data
 data =
-    [ { episode = 72, date = "2022-12-19", id = "holiday-special-2022", title = "2022 Holiday Special", guests = [ "Matthew Griffith", "Mario Rogic" ], descritpion = "Matthew Griffith and Mario Rogic join us to ring in the New Year and look at trends in Elm this year and looking forward next year." }
-    , { episode = 71, date = "2022-12-05", id = "deliberate-practice", title = "Deliberate Practice", guests = [], descritpion = "We discuss deliberate practice and how it can help you hone your craft, and make you even better at using Opaque Types." }
-    , { episode = 70, date = "2022-11-21", id = "elm-gql", title = "elm-gql with Matthew Griffith", guests = [ "Matthew Griffith" ], descritpion = "Matthew Griffith joins us to share his new type-safe GraphQL tool, and to compare the query builder and query generator approaches." }
-    , { episode = 69, date = "2022-11-07", id = "types-vs-tests", title = "Types vs. Tests", guests = [], descritpion = "We discuss the role of types versus tests, and whether they complement each other or make the other obsolete." }
-    , { episode = 68, date = "2022-10-24", id = "add", title = "Elm and ADD", guests = [], descritpion = "We discuss how Elm is a powerful tool for people with ADD, and how lessons learned from ADD can benefit people who don't have ADD." }
-    , { episode = 67, date = "2022-10-10", id = "elm-at-a-billion-dollar-company", title = "Elm at a Billion Dollar Company with Aaron White", guests = [], descritpion = "We discuss how betting on Elm has paid off at Vendr and get a CTO's perspective on using Elm at scale." }
-    , { episode = 66, date = "2022-09-26", id = "elm-codegen", title = "elm-codegen with Matthew Griffith", guests = [ "Matthew Griffith" ], descritpion = "Matthew Griffith joins us to discuss elm-codegen, a tool for generating Elm safely and conveniently." }
-    , { episode = 65, date = "2022-09-12", id = "elm-watch", title = "elm-watch with Simon Lydell", guests = [ "Simon Lydell" ], descritpion = "Simon Lydell joins us to discuss his new Elm dev server which has a minimalist philosophy and maximal refinement." }
-    , { episode = 64, date = "2022-08-29", id = "projects-we-wish-we-had-time-for", title = "Projects We Wish We Had Time For", guests = [], descritpion = "We discuss the power of the Elm when paired with developer tools, and we go through our notes to look at Elm tools we wish we had the time to build." }
-    , { episode = 63, date = "2022-08-15", id = "false-positives", title = "The Root Cause of False Positives", guests = [], descritpion = "We explore false positives and negatives in static analysis tools, and how Elm helps us avoid them." }
-    , { episode = 62, date = "2022-08-01", id = "elm-test-v2", title = "elm-test v2 with Martin Janiczek", guests = [ "Martin Janiczek" ], descritpion = "Martin Janiczek joins us to talk about fuzz testing, why it matters, and how the upcoming elm-test v2 changes the way you write fuzzers in Elm." }
-    , { episode = 61, date = "2022-07-18", id = "exploring-form-api", title = "Exploring a New Form API Design", guests = [], descritpion = "We dive into some ideas for a new Form design, pulling in a lot of our favorite Elm techniques to make it safe and intuitive." }
-    , { episode = 60, date = "2022-07-04", id = "trustworthy-tools", title = "Building Trustworthy Tools", guests = [], descritpion = "We discuss how to earn users' trust by giving meaningful feedback and giving predictable results." }
-    , { episode = 59, date = "2022-06-20", id = "wrap-early-unwrap-late", title = "Wrap Early, Unwrap Late", guests = [], descritpion = "We dive into preventing bugs and making your code more maintainable by wrapping early and unwrapping late." }
-    , { episode = 58, date = "2022-06-06", id = "store-pattern", title = "Elm Store Pattern", guests = [ "Martin Janiczek" ], descritpion = "Martin Janiczek joins us to discuss a pattern for declaratively managing loading state for API data across page changes." }
-    , { episode = 57, date = "2022-05-23", id = "state-of-elm-2022", title = "State of Elm 2022", guests = [ "Martin Stewart" ], descritpion = "Martin Stewart joins us to share the results from the State of Elm 2022 and look at some of the trends." }
-    , { episode = 56, date = "2022-05-09", id = "elm-book", title = "elm-book with Georges Boris", guests = [ "Georges Boris" ], descritpion = "Georges Boris joins us to discuss elm-book and how it helps iterate on a design language of Elm widgets." }
-    , { episode = 55, date = "2022-04-25", id = "use-the-platform", title = "Use the Platform", guests = [], descritpion = "We discuss what it means to use the web platform, and how that helps improve the user and developer experience in Elm apps." }
-    , { episode = 54, date = "2022-04-11", id = "dev-productivity", title = "Developer Productivity", guests = [], descritpion = "We share our productivity and workflow tips, and how it changes the way we write Elm code." }
-    , { episode = 53, date = "2022-03-28", id = "dead-code", title = "Dead Code", guests = [], descritpion = "We discuss how to remove dead code in Elm, or avoid it altogether in your workflow, and why it matters." }
-    , { episode = 52, date = "2022-03-14", id = "category-theory", title = "Category Theory in Elm with Joël Quenneville", guests = [ "Joël Quenneville" ], descritpion = "Joël Quenneville joins us to help us distill down Category Theory patterns and explore what value it brings us as Elm developers." }
-    , { episode = 51, date = "2022-02-28", id = "primitive-obsession", title = "Primitive Obsession", guests = [], descritpion = "We discuss the Primitive Obsession code smell, and how introducing types with semantic meaning can improve your Elm codebase." }
-    , { episode = 50, date = "2022-02-14", id = "large-codebases", title = "Large Elm Codebases with Ju Liu", guests = [ "Ju Liu" ], descritpion = "Ju Liu joins us to share some tips and techniques from working with a large Elm codebase at NoRedInk." }
-    , { episode = 49, date = "2022-01-31", id = "optimizing-elm", title = "Optimizing Performance with Robin Hansen", guests = [], descritpion = "We talk about Robin's work optimizing Elm, and the opportunities that remain for Elm performance improvements." }
-    , { episode = 48, date = "2022-01-17", id = "if-it-compiles-it-works", title = "If It Compiles It Works", guests = [], descritpion = "What do we really mean when we say \"if it compiles it works?\" And how do we make sure our apps stay that way?" }
-    , { episode = 47, date = "2022-01-03", id = "whats-working-for-elm", title = "What's Working for Elm", guests = [], descritpion = "We look at what we can learn by understanding what's working well for Elm and the Elm ecosystem." }
+    [ { episode = 96
+      , date = "2023-12-04"
+      , id = "bundle-size"
+      , title = "Optimizing Bundle Size"
+      , description = "We discuss Elm's strengths and weaknesses for optimizing bundle size, and how find and fix your app's bundle size bottlenecks."
+      }
+    , { episode = 95
+      , date = "2023-11-20"
+      , id = "elm-open-api"
+      , title = "elm-open-api with Wolfgang Schuster"
+      , description = "Wolfgang Schuster joins us to discuss generating type-safe SDKs using elm-open-api."
+      }
+    , { episode = 94
+      , date = "2023-11-06"
+      , id = "elm-concurrent-task"
+      , title = "elm-concurrent-task with Andrew MacMurray"
+      , description = "Andrew MacMurray joins us to discuss `elm-concurrent-task` which allows you to run JavaScript functions with a Task style API."
+      }
+    , { episode = 93
+      , date = "2023-10-23"
+      , id = "elm-visualization"
+      , title = "elm-visualization with Jakub Hampl"
+      , description = "Jakub Hampl joins us to discuss elm-visualization and how it enables powerful flexibility through its low-level building blocks philosophy."
+      }
+    , { episode = 92
+      , date = "2023-10-09"
+      , id = "elm-news"
+      , title = "Elm News with Wolfgang Schuster"
+      , description = "Wolfgang joins us to discuss his philosophy and approach to sharing what's new in the Elm community."
+      }
+    , { episode = 91
+      , date = "2023-09-25"
+      , id = "code-reading-club"
+      , title = "Code Reading Club with Katja Mordaunt"
+      , description = "We discuss Code Reading Club, how improving your code reading skills can make you a better programmer, and the readability of Elm code."
+      }
+    , { episode = 90
+      , date = "2023-09-11"
+      , id = "elm-land"
+      , title = "elm-land with Ryan Haskell-Glatz"
+      , description = "We discuss elm-land, how it compares to elm-spa, and its philosophy of making Elm mainstream."
+      }
+    , { episode = 89
+      , date = "2023-08-28"
+      , id = "human-side-of-open-source"
+      , title = "The Human Side of Open Source"
+      , description = "We discuss the role of Open Source Software and how we approach leadership and communication in our projects."
+      }
+    , { episode = 88
+      , date = "2023-08-14"
+      , id = "avoiding-unused-code"
+      , title = "Avoiding Unused Code"
+      , description = "We discuss how to avoid unused Elm code, why it matters, and what leads to unused code in the first place."
+      }
+    , { episode = 87
+      , date = "2023-07-31"
+      , id = "evergreen"
+      , title = "Evergreen Migrations with Mario Rogic"
+      , description = "Mario walks us through how Evergreen gives you type-safety between versions of your application, and some improvements in Lamdera 1.1.0."
+      }
+    , { episode = 86
+      , date = "2023-07-17"
+      , id = "elm-pages-v3"
+      , title = "elm-pages v3"
+      , description = "We discuss the new elm-pages v3 release and the new suite of features for full-stack server-side rendered Elm."
+      }
+    , { episode = 85
+      , date = "2023-07-03"
+      , id = "why-we-care-about-elm"
+      , title = "Why We Care About Elm"
+      , description = "We discuss our backstories, our core values and beliefs as developers, and why Elm speaks to us."
+      }
+    , { episode = 84
+      , date = "2023-06-19"
+      , id = "great-docs"
+      , title = "Writing Great Docs"
+      , description = "We discuss why the baseline for Elm docs is so high, how to navigate docs as a user, and how to make your own docs great."
+      }
+    , { episode = 83
+      , date = "2023-05-22"
+      , id = "elm-review-data-extractors"
+      , title = "elm-review Data Extractors"
+      , description = "We discuss elm-review's Data Extractors and how they open up your elm-review context to external tools like data visualizations."
+      }
+    , { episode = 82
+      , date = "2023-05-08"
+      , id = "haskell"
+      , title = "Elm and Haskell with Flavio Corpa"
+      , description = "Flavio Corpa joins us to discuss the similarities and differences between Elm and Haskell, and how learning Haskell can help you write better Elm code."
+      }
+    , { episode = 81
+      , date = "2023-04-24"
+      , id = "elm-form"
+      , title = "elm-form"
+      , description = "We discuss the power of decoupling from data types using low-level data, and how dillonkearns/elm-form gives you simpler wiring that feels like magic but isn't."
+      }
+    , { episode = 80
+      , date = "2023-04-11"
+      , id = "elm-and-ai"
+      , title = "Elm and AI"
+      , description = "Can we get strong guarantees from AI tools that are known to hallucinate? We discuss some strategies, and ways that Elm might be a great target for AI assistance."
+      }
+    , { episode = 79
+      , date = "2023-03-28"
+      , id = "scaffolding-elm-code"
+      , title = "Scaffolding Elm Code"
+      , description = "We discuss the benefits of automating your Elm boilerplate, and design techniques for APIs that generate code."
+      }
+    , { episode = 78
+      , date = "2023-03-13"
+      , id = "tailwind-color-params"
+      , title = "Color parameters in elm-tailwind-modules with Philipp Krüger"
+      , description = "Philipp joins us to talk about color parameters in elm-tailwind-modules and how that brings the tool closer to an ideal expression of a design system in Elm."
+      }
+    , { episode = 77
+      , date = "2023-02-27"
+      , id = "elm-app-url"
+      , title = "elm-app-url with Simon Lydell"
+      , description = "Simon Lydell joins us to talk about a new approach to URL parsing in Elm that is both simple and powerful."
+      }
+    , { episode = 76
+      , date = "2023-02-13"
+      , id = "vite"
+      , title = "Elm and Vite"
+      , description = "Lindsay Wardell joins us to talk about Vite and how to set it up for your Elm project."
+      }
+    , { episode = 75
+      , date = "2023-01-30"
+      , id = "elm-pages-scripts"
+      , title = "elm-pages scripts"
+      , description = "We discuss elm-pages BackendTasks and how to run them as scripts with a single command."
+      }
+    , { episode = 74
+      , date = "2023-01-16"
+      , id = "elm-widgets"
+      , title = "Plug and Play Design Systems with Georges Boris"
+      , description = "Georges Boris joins us to share two new packages for theming and stateless widgets with minimal boilerplate."
+      }
+    , { episode = 73
+      , date = "2023-01-02"
+      , id = "security"
+      , title = "Security in Elm"
+      , description = "We discuss what makes Elm's security vulnerability surface area smaller, and what frontend security considerations are important in Elm apps."
+      }
     ]

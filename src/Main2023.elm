@@ -10,6 +10,7 @@ import Html.Attributes
 import Iso8601
 import Time
 import Year2023.ElmRadio
+import Year2023.ElmTown
 import Year2023.ElmWeekly
 import Year2023.JobOffers
 import Year2023.Others
@@ -17,7 +18,8 @@ import Year2023.Youtube
 
 
 type Data
-    = DataElmRadio Year2023.ElmRadio.Data
+    = DataElmTown Year2023.ElmTown.Data
+    | DataElmRadio Year2023.ElmRadio.Data
     | DataElmWeekly Year2023.ElmWeekly.Data
     | DataOthers Year2023.Others.Data
     | DataYoutube Year2023.Youtube.Data
@@ -32,11 +34,11 @@ type alias ParsedDate =
 
 
 imagesLocation =
-    if True then
+    if False then
         "https://lucamug.github.io/elm-a-year-in-review/images2023/"
 
     else
-        "images2023/"
+        "/images2023/"
 
 
 categorizedData : Dict.Dict Int (List ( Int, Data ))
@@ -48,6 +50,9 @@ categorizedData =
                 dataParseed =
                     dateParser <|
                         case data of
+                            DataElmTown d ->
+                                { dateEvent = "", datePublished = d.date, title = d.title }
+
                             DataElmRadio d ->
                                 { dateEvent = "", datePublished = d.date, title = d.title }
 
@@ -81,7 +86,8 @@ categorizedData =
         )
         Dict.empty
         (List.map DataElmRadio Year2023.ElmRadio.data
-            -- ++ List.map DataElmWeekly Year2023.ElmWeekly.data
+            ++ List.map DataElmTown Year2023.ElmTown.data
+            ++ List.map DataElmWeekly Year2023.ElmWeekly.data
             ++ List.map DataOthers Year2023.Others.data
             ++ List.map DataYoutube Year2023.Youtube.data
         )
@@ -146,6 +152,9 @@ main =
                                                     ++ nth day
                                                     ++ "* - "
                                                     ++ (case d_ of
+                                                            DataElmTown d ->
+                                                                dataElmTownToString d
+
                                                             DataElmRadio d ->
                                                                 dataElmRadioToString d
 
@@ -165,7 +174,7 @@ main =
                             (List.range 1 12)
                    )
                 ++ jobOffers
-                ++ "\n\n**This is all. See you in 2024!**\n\n❤️"
+                ++ "\n\n**This is all. See you in 2025!**\n\n❤️"
 
         catData =
             categorizedData
@@ -265,30 +274,48 @@ jobOffers =
         ]
 
 
-dataElmRadioToString : Year2023.ElmRadio.Data -> String
-dataElmRadioToString data =
-    -- { date : String
-    -- , guests : List String
-    -- , descritpion : String
-    -- , episode : Int
-    -- , title : String
-    -- , id : String
-    -- }
+dataElmTownToString : Year2023.ElmTown.Data -> String
+dataElmTownToString data =
     let
         title =
-            "Elm Radio episode #" ++ String.fromInt data.episode ++ " - " ++ data.title
+            "Elm Town episode #" ++ String.fromInt data.episode ++ " - " ++ data.title
 
         url =
-            "https://elm-radio.com/episode/" ++ data.id
+            "https://elm.town/episodes/" ++ data.id
+
+        image =
+            "elm-town.png"
     in
     link
         { title = title
         , url = url
         }
         ++ " \""
-        ++ data.descritpion
+        ++ data.description
         ++ "\""
-        ++ imageMd { image = imagesLocation ++ "elm-radio.png", title = title, url = url }
+        ++ imageMd { image = imagesLocation ++ image, title = title, url = url }
+
+
+dataElmRadioToString : Year2023.ElmRadio.Data -> String
+dataElmRadioToString data =
+    let
+        title =
+            "Elm Radio episode #" ++ String.fromInt data.episode ++ " - " ++ data.title
+
+        url =
+            "https://elm-radio.com/episode/" ++ data.id ++ "/"
+
+        image =
+            "elm-radio.png"
+    in
+    link
+        { title = title
+        , url = url
+        }
+        ++ " \""
+        ++ data.description
+        ++ "\""
+        ++ imageMd { image = imagesLocation ++ image, title = title, url = url }
 
 
 dataElmWeeklyToString : Year2023.ElmWeekly.Data -> String
@@ -633,7 +660,7 @@ If you want to keep up with Elm's related news:
 * Join the [Elm community on Slack](https://elm-lang.org/community/slack)
 * Check [discourse.elm-lang.org](https://discourse.elm-lang.org/)
 * Follow [@elmlang on Twitter](https://twitter.com/elmlang)
-* Listen to the [Elm Radio podcast](https://elm-radio.com/)
+* Listen to the [Elm Radio podcast](https://elm-radio.com/) and the [Elm Town podcast](https://elm.town/)
 * Browse the [Elmcraft website](https://elmcraft.org/)
 * Check [Incremental Elm Discord](https://incrementalelm.com/chat/) for working on Elm open source projects
 

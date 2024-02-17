@@ -26,6 +26,11 @@ type Type_
 
 data : List Data
 data =
+    []
+
+
+dataOld : List Data
+dataOld =
     [ { descriptions = "A new releases of the language server and the VSCode client. New features include: fuzzy matching when using the workspace symbol search, ignoring suppressed elm-review errors, and lots more."
       , url = "https://discourse.elm-lang.org/t/elmls-2-4-0-and-vscode-client-2-4-0-are-out/8041"
       , title = "ElmLS 2.4.0 and VSCode Client 2.4.0 are out"
