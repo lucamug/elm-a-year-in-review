@@ -2,75 +2,227 @@ module Year2023.ElmWeekly exposing (..)
 
 
 type alias Data =
-    { date : String, description : String, issue : Int, id : String }
+    { date : String
+    , description : String
+    , issue : Int
+    }
 
 
 data : List Data
 data =
-    []
-
-
-dataOld : List Data
-dataOld =
-    [ { date = "2022-12-21", id = "244", issue = 244, description = "Articles and Discussion Testing Core-like Modules Martin Janiczek has started a new testing package for testing re-implementations of core modules. E.g…" }
-    , { date = "2022-12-14", id = "243", issue = 243, description = "Articles and Discussion Gaining insight into your codebase with elm-review Jeroen dives into the 2nd part of the latest elm-review release and what new…" }
-    , { date = "2022-12-07", id = "242", issue = 242, description = "First day on a new platform 🎉 So far the transition has gone smoothly, and hopefully that continues. If you or someone you know is looking to…" }
-    , { date = "2022-11-30", id = "241-1472380", issue = 241, description = "Last reminder that next issue should be coming from Substack and not Revue. Hope to see you all on the other side!" }
-    , { date = "2022-11-23", id = "240-1461395", issue = 240, description = "Just a small reminder of the expected move to Substack at the beginning of December." }
-    , { date = "2022-11-16", id = "239-1449036", issue = 239, description = "Word is that Revue will be shutting down by the end of the year. Since that's how I send out the newsletter it looks like I'll be switching services…" }
-    , { date = "2022-11-09", id = "238-1436712", issue = 238, description = "Articles and Discussion SVGs as Elm Code Tessa Kelly talks about moving from static SVG files to flexible SVG code defined in Elm. Tools and Projects…" }
-    , { date = "2022-11-02", id = "237-1425634", issue = 237, description = "Articles and Discussion 3D Pool Game — jaredmsmith.com A look back at building a 3D pool game for the Elm 3D Game Jam. Tools and Projects Elm-watch…" }
-    , { date = "2022-10-26", id = "236-1414676", issue = 236, description = "Articles and Discussion Introducing Elm as a Frontend An overview of NAIS's experience replacing a React app with Elm. Tools and Projects Andrea Callea…" }
-    , { date = "2022-10-19", id = "235-1403846", issue = 235, description = "Articles and Discussion Notes on Building \"XCuseMe\" Some thoughts on building an app with Elm and IHP. Tools and Projects Elm + Tauri, Intro …" }
-    , { date = "2022-10-12", id = "234-1393068", issue = 234, description = "Tools and Projects Elm Land | Hello, world! — elm.land What is Elm Land? Learn more about the project's motivation, goals, and how we can get there…" }
-    , { date = "2022-10-05", id = "233-1381552", issue = 233, description = "Articles and Discussion Designing Impossible Situations Two example conversations Jesse Warden has had with designers while coding front-ends in two…" }
-    , { date = "2022-09-28", id = "232-1370195", issue = 232, description = "I was able to attend Strange Loop 2022 and caught a couple of talks involving Elm. As the recordings make their way to YouTube I'll make sure to include…" }
-    , { date = "2022-09-21", id = "231-1359418", issue = 231, description = "\"[..] the need for the power of the monadic binder does come up every now 'andThen' [..]\" - Martin Janiczek" }
-    , { date = "2022-09-14", id = "230-1345823", issue = 230, description = "Articles and Discussion Designing an Elm component Alex Esoposting talks about their Elm project for recording and replaying games of Neptune's Pride…" }
-    , { date = "2022-09-07", id = "229-1334833", issue = 229, description = "Articles and Discussion Day 3 of Elm- Records - Eke Enyinnaya Diala Day 3 of Eke Enyinnaya Diala's learning Elm series. Removing an annoyance in…" }
-    , { date = "2022-08-31", id = "228-1324340", issue = 228, description = "Articles and Discussion ESLint equivalents in Elm — elmcraft.org Comparing ESLint functionality and the equivalents in the Elm ecosystem Tools and…" }
-    , { date = "2022-08-24", id = "227-1313772", issue = 227, description = "Articles and Discussion GSoC 2022 @ Kodi — medium.com Mohd. Shaheer shares their mid-term evaluation of the Google Summer of Code project. Day 2 of Elm…" }
-    , { date = "2022-08-17", id = "226-1303852", issue = 226, description = "Articles and Discussion Day 1 of Elm - Eke Enyinnaya Diala Follow along with Eke Enyinnaya Diala as they learn Elm. Tools and Projects 🌀 Airsequel …" }
-    , { date = "2022-08-10", id = "225-1292986", issue = 225, description = "Tools and Projects micahhan/elm-safe-recursion A package for safely recursing through data structures. Chart Interactive Trading platform to trade and…" }
-    , { date = "2022-08-03", id = "224-1283222", issue = 224, description = "Tools and Projects Type-Signature — type-signature.com Who Wants to Be a Millionaire - but with Types Travelm-Agency 3.0.0 A new major version of…" }
-    , { date = "2022-07-27", id = "223-1273732", issue = 223, description = "Articles and Discussion My first Functional Programming app Notes from the perspective of an experienced programmer, new to functional programming…" }
-    , { date = "2022-07-20", id = "222-1264086", issue = 222, description = "Articles and Discussion Using Elm pipelines with andThen to decode a multi-object type Decoding remote api responses into response types that have two…" }
-    , { date = "2022-07-13", id = "221-1255280", issue = 221, description = "Articles and Discussion A Quick Intro to Elm for React Developers — blog.theodo.com An introduction to the Elm for frontend web developers familiar with…" }
-    , { date = "2022-07-06", id = "220-1245309", issue = 220, description = "Tools and Projects Chip8 Emulator A Chip-8 emulator, written by danneu Elm-test 0.19.1-revision9 — discourse.elm-lang.org The new `elm-test…" }
-    , { date = "2022-06-29", id = "219-1234492", issue = 219, description = "Tools and Projects CtPaint An in-browser paint app by \"Chadtech\". Graph Bang A game by Logan Lowder. Elm Catalog now lists 1307 Elm 0.19.x packages …" }
-    , { date = "2022-06-22", id = "218-1223344", issue = 218, description = "Tools and Projects Elm Designer — elm-designer.passiomatic.com A new version of Elm Designer, a visual code generator for Elm UI! New features: import…" }
-    , { date = "2022-06-15", id = "217-1213497", issue = 217, description = "Articles and Discussion Understanding UI Components in Elm Kasper Møller Andersen from Humio discusses the different styles of components in Elm. Tools…" }
-    , { date = "2022-06-08", id = "216-1203438", issue = 216, description = "Tools and Projects A Monkey Interpreter — discourse.elm-lang.org An Elm interpreter for Monkey, a programming language designed by Thorsten Ball…" }
-    , { date = "2022-06-01", id = "215-1193590", issue = 215, description = "Tools and Projects Guix support for Elm Guix (GNU Build System) has added support for Elm packages. Song Designer — discourse.elm-lang.org A UI app for…" }
-    , { date = "2022-05-25", id = "214-1183681", issue = 214, description = "Articles and Discussion Fixing vulnerabilities in Elm's virtual DOM Jeroen walks us through the recent elm/virtual-dom update and a gives us a glance of…" }
-    , { date = "2022-05-18", id = "213-1173382", issue = 213, description = "Articles and Discussion Intro to Elm, for React Devs — kkalamarski.me Krzysztof shares their intro to Elm from the perspective of someone familiar with…" }
-    , { date = "2022-05-11", id = "212-1163276", issue = 212, description = "Articles and Discussion Utilizing Native Dialog in Elm — www.lindsaykwardell.com The native dialog element is fantastic for implementing modals. Follow…" }
-    , { date = "2022-05-04", id = "211-1152939", issue = 211, description = "Articles and Discussion Starter configurations for elm-review Jeroen talks about adding starter template configurations to elm-review. Why Are Phantom…" }
-    , { date = "2022-04-27", id = "210-1142408", issue = 210, description = "Articles and Discussion Why should you try Elm? — medium.com Álvaro Sánchez shares their thoughts on why Elm is worth learning. Talks and Podcasts…" }
-    , { date = "2022-04-20", id = "209-1131886", issue = 209, description = "Articles and Discussion Setup for Elm, from Development to Production Huy Phung shows us how they setup their Elm projects. Regular Expressions in Elm…" }
-    , { date = "2022-04-13", id = "208-1121427", issue = 208, description = "Articles and Discussion \"Elm ports\" in Kotlin — lengrand.fr Translating Elm's port concept to Kotlin for more clean FFI. Randomness in Elm A brief intro…" }
-    , { date = "2022-04-06", id = "207-1109656", issue = 207, description = "Articles and Discussion Interacting With Time in Elm Short notes on using time in your Elm code, from Huy Phung. Install Elm for OpenBSD x86_64 Quick…" }
-    , { date = "2022-03-30", id = "206-1097910", issue = 206, description = "This week marks 10 years of Elm! To help celebrate, the Elm Online Meetup will be hanging out on March 30th. Join them or celebrate in your own way." }
-    , { date = "2022-03-23", id = "205-1086950", issue = 205, description = "Articles and Discussion Elm at Talenteca — dev.to This is a brief post for sharing what it means to create web apps nowadays and our experience at…" }
-    , { date = "2022-03-16", id = "204-1076070", issue = 204, description = "Articles and Discussion SimulatedHttp, functors and sed If you're using elm-program-test, or looking to, this is a great guide for simulating HTTP…" }
-    , { date = "2022-03-09", id = "203-1064828", issue = 203, description = "Articles and Discussion Tail recursion, but modulo cons Jeroen discusses how tail recursion can be easier to implement, if optimizations are made. ⚡️…" }
-    , { date = "2022-03-02", id = "202-1052506", issue = 202, description = "Articles and Discussion Migrating React to Elm in Three Ways — blog.joelabshier.com Joel Abshier provides us a guide to converting from a React app to…" }
-    , { date = "2022-02-23", id = "201-1041169", issue = 201, description = "Articles and Discussion Announcing Elmcraft - a place for all things Elm — discourse.elm-lang.org Ever needed a curated list of books on Elm or other…" }
-    , { date = "2022-02-16", id = "200-1029618", issue = 200, description = "Tools and Projects Wordle in Elm in 1h+ (time lapse) — www.youtube.com Martin Janiczek decided to build Wordle in an hour. They didn't quite make it but…" }
-    , { date = "2022-02-09", id = "199-1017639", issue = 199, description = "Articles and Discussion Duncan Malashock on Twitter — twitter.com Duncan, @DuncanMalashock, has been sharing a plethora of Elm design principals…" }
-    , { date = "2022-02-02", id = "198-1006112", issue = 198, description = "There was a hiccup today with Elm, Bazel, and other tools that use GitHub for reproducible packages. So I figured it was appropriate to have a separate…" }
-    , { date = "2022-01-26", id = "197-993384", issue = 197, description = "Articles and Discussion Lambda Calculus — jxxcarlson.medium.com James Carlson walks us through building a calculator in Lambda Calculus. My Elm…" }
-    , { date = "2022-01-19", id = "196-982352", issue = 196, description = "Hope everyone is having a great beginning to 2022. In addition to the usual blog posts and talks this week we're trying something a little new, jobs…" }
-    , { date = "2022-01-12", id = "195-970851", issue = 195, description = "Wanted to highlight that we have a bilingual blog post this week! Marcio Frayze blogged about Simple vs Simplistic Code in both English and their native…" }
-    , { date = "2022-01-05", id = "194-959735", issue = 194, description = "What better way to start the year than a new release of the Elm language server and VSCode client, a new episode of Elm Radio, auto generating JSON…" }
-
-    -- , { id = "193-949060", issue = 193, description = "2022 is right around the corner! Whether you're looking to dive into Elm for the first time or wanting to share your Elm experience, this could be your…" }
-    -- , { id = "192-933905", issue = 192, description = "Donuts, trees, an Elm Radio holiday, and more!" }
-    -- , { id = "191-919590", issue = 191, description = "This week we have a talk about using Elm for 3 years, a blog post on performance, we highlight some recent package updates, and more Advent of Code!" }
-    -- , { id = "190-907469", issue = 190, description = "Advent of Code is in full swing. If you're stuck or just want to share, check out the #adventofcode channel in Slack, or ask and share in Twitter with…" }
-    -- , { id = "189-895819", issue = 189, description = "In preparation for the rapidly approaching Advent of Code, starting Dec 1st, it seemed appropriate to share various tools and starter projects for…" }
-    -- , { id = "188-881610", issue = 188, description = "The first two posts from Robin Hansen in a series about JavaScript Performance, a discussion about WebGL, and another episode of Code in the Unknown for…" }
-    -- , { id = "187-850917", issue = 187, description = "Articles and Discussion Intro to elm-ts-interop Course — incrementalelm.com Dillon Kearns has a new course on elm-ts-interop fundamentals and setup. It…" }
-    -- , { id = "186-839616", issue = 186, description = "Articles and Discussion Lessons Learned Jason covers a few patterns and techniques they've learned from their first 10k lines of Elm. Including…" }
-    -- , { id = "185-829156", issue = 185, description = "A note from Alex: after nearly three years of editing Elm Weekly, I'm passing the baton to Wolfgang Schuster, an active member of the Elm community for…" }
+    [ { issue = 296
+      , description = "A few months ago I thought it’d be cool if I started storing all of the issues in spreadsheets (might move to a database in the future). This was mostly…"
+      , date = "2023-12-27"
+      }
+    , { issue = 295
+      , description = "Articles and Discussion On continuation-passing style and the factorial function Dwayne Crooks writes about continuation-passing style and Elm. Record…"
+      , date = "2023-12-20"
+      }
+    , { issue = 294
+      , description = "Articles and Discussion AOC23 - 2 December by @thelayeredmind @thelayeredmind walks us through learning Elm &amp; solving Advent of Code day 2. Tools and…"
+      , date = "2023-12-13"
+      }
+    , { issue = 293
+      , description = "Articles and Discussion AOC23 - 1 December by @thelayeredmind @thelayeredmind walks us through learning Elm &amp; solving Advent of Code day 1. Tools and…"
+      , date = "2023-12-06"
+      }
+    , { issue = 292
+      , description = "Tools and Projects elm-performance-tools An experimental tool for measuring the performance of your Elm code. Built with Elm: Adaptiv Adaptiv has remade…"
+      , date = "2023-11-29"
+      }
+    , { issue = 291
+      , description = "Articles and Discussion Using GitHub Copilot with Elm Per Lundholm talks about using Copilot with Elm. Tools and Projects Elm Tauri App A new template…"
+      , date = "2023-11-22"
+      }
+    , { issue = 290
+      , description = "Tools and Projects upsiflu/less-ui An experimental package from Flupsi for building UIs, with a demo to help get you started…"
+      , date = "2023-11-15"
+      }
+    , { issue = 289
+      , description = "Articles and Discussion Tools and Projects A Text-to-Drumbeat App A fun tool for turning text into music, from James Carlson. orus-io/elm-nats A pure…"
+      , date = "2023-11-08"
+      }
+    , { issue = 288
+      , description = "Articles and Discussion Final Fantasy Legend Level Editor Update A short post from Jesse on 2D grids in Elm. Do you have opinions about coding style…"
+      , date = "2023-11-01"
+      }
+    , { issue = 287
+      , description = "Articles and Discussion Rebuilding Final Fantasy Legend in Elm Jesse Warden talks about their journey so far of rebuilding Final Fantasy Legend. Elm…"
+      , date = "2023-10-25"
+      }
+    , { issue = 286
+      , description = "Articles and Discussion Worst Elm Code Possible A summary from Mario's elm-camp session on what bad Elm looks like. Tools and Projects…"
+      , date = "2023-10-18"
+      }
+    , { issue = 285
+      , description = "Tools and Projects Queens Lair A chess puzzle game from Lucas Payr. New macOS ARM binary A new release of the Elm binary for ARM based macs. Connect 4…"
+      , date = "2023-10-11"
+      }
+    , { issue = 284
+      , description = "It was brought to my attention last week that is my 100th issue! It doesn’t help that I’m not too attentive to the numbers, but also it really does feel…"
+      , date = "2023-10-04"
+      }
+    , { issue = 283
+      , description = "Tools and Projects elm-to-gh-pages An example project from Isaac Van Doren for how to setup GitHub Actions to deploy your Elm app to GitHub Pages…"
+      , date = "2023-09-27"
+      }
+    , { issue = 282
+      , description = "Games! 🕹️"
+      , date = "2023-09-20"
+      }
+    , { issue = 281
+      , description = "Articles and Discussion Why Elm Might Be a Better Choice Than React for Your Next Web Project Charlotte Neill shares why Elm is their choice for web…"
+      , date = "2023-09-13"
+      }
+    , { issue = 280
+      , description = "State of Elm 2023 The community run survey is back again this year. Articles and Discussion Bring your own DOM - Part 2 - TUIs Wolfgang Schuster walks…"
+      , date = "2023-09-06"
+      }
+    , { issue = 279
+      , description = "Articles and Discussion Smart Event Listeners Applying the idea of “parse, don’t validate” to event handlers, with Dwayne Crooks. Talks and Podcasts 🍿…"
+      , date = "2023-08-30"
+      }
+    , { issue = 278
+      , description = "Articles and Discussion Useful Chompers Dwayne Crooks walks us through building some useful chompers with elm/parser. Tools and Projects SubGrid A…"
+      , date = "2023-08-23"
+      }
+    , { issue = 277
+      , description = "Articles and Discussion Taking Screenshots with Elm 0.19 Flavio Corpa demonstrates for us how to take screenshots in Elm. Wrapper modules can lead to…"
+      , date = "2023-08-16"
+      }
+    , { issue = 276
+      , description = "Articles and Discussion 7 GUIs Dwayne Crooks’ implementation of 7GUIs: A GUI Programming Benchmark. How to manage HTTP requests on page load with elm…"
+      , date = "2023-08-09"
+      }
+    , { issue = 275
+      , description = "Articles and Discussion Quiz Craft: the frontend story Antoine Vandermeersch takes us on a journey of building a front end for their quiz app. Tools and…"
+      , date = "2023-08-02"
+      }
+    , { issue = 274
+      , description = "Articles and Discussion Demystifying Pratt Parsers Martin Janiczek walks us through writing a Pratt parser. Useful for parsing things that have order of…"
+      , date = "2023-07-26"
+      }
+    , { issue = 273
+      , description = "Articles and Discussion How Writing Code in Elm Changed How I Want to Write Code in Python @dneaves shares how Elm has impacted their Python. Elm Camp…"
+      , date = "2023-07-19"
+      }
+    , { issue = 272
+      , description = "Back Home &amp; Busy"
+      , date = "2023-07-12"
+      }
+    , { issue = 271
+      , description = "This week is a little short as I’m traveling for Elm Camp &amp; July 4th there won’t be a newsletter as I’ll be traveling home from a vacation. The regular…"
+      , date = "2023-06-28"
+      }
+    , { issue = 270
+      , description = "Articles and Discussion Showing Any Playing Card From a Deck With Elm Mapping playing cards to Unicode characters, and more. Tools and Projects Enig…"
+      , date = "2023-06-21"
+      }
+    , { issue = 269
+      , description = "Tools and Projects Best Web Vitals A little app that keeps score on Google Core Web Vitals for any site. To showcase the best scores globally and to…"
+      , date = "2023-06-14"
+      }
+    , { issue = 268
+      , description = "Articles and Discussion 2023 年、改めて React と Elm Architecture を比較する A short comparison of React and Elm by @jinjor. Tools and Projects orus-io/elm-spa…"
+      , date = "2023-06-07"
+      }
+    , { issue = 267
+      , description = "Tools and Projects Learn the game Go An app that teaches you how to play Go. Built with Elm by Artur Honzawa. Wyrhta Ceramics Built with Elm Land, Mika…"
+      , date = "2023-05-31"
+      }
+    , { issue = 266
+      , description = "Articles and Discussion Using Lamdera professionally Martin Stewart talks about using Lamdera at Realia and the tools they built. Why I use Elm in 2023…"
+      , date = "2023-05-24"
+      }
+    , { issue = 265
+      , description = "Articles and Discussion How to use accounts-ui with Elm and Meteor in 10 minutes A short walk-through of how to setup accounts-ui and accounts-password…"
+      , date = "2023-05-17"
+      }
+    , { issue = 2641
+      , description = "Unfortunately 1 of the links in today’s issue is sometimes broken and in a very odd way. So I’m sending out a “patch” so that everyone can enjoy the…"
+      , date = "2023-05-10"
+      }
+    , { issue = 264
+      , description = "Articles and Discussion Experiments with GPT James Carlson gives a brief look at their GPT Lab experiment and some of the art they’ve generated with it…"
+      , date = "2023-05-10"
+      }
+    , { issue = 263
+      , description = "Articles and Discussion Programming in Style: From Pattern Matching to Point Free Peter Urbak shows us how to go from a case of having nested pattern…"
+      , date = "2023-05-03"
+      }
+    , { issue = 262
+      , description = "Tools and Projects elm-review 2.13.0 Mostly a rewrite of the internals, but also a bonus of being much faster! Tooty An experimental multi-account…"
+      , date = "2023-04-26"
+      }
+    , { issue = 261
+      , description = "Elm Camp The first Elm Unconference is happening in late June, giving opportunity for Elm makers &amp; tool builders to gather, communicate and collaborate…"
+      , date = "2023-04-19"
+      }
+    , { issue = 260
+      , description = "Does your company use Elm? Do you like supporting the Elm community? Well now your company can support the Elm community too through GitHub Sponsoring…"
+      , date = "2023-04-12"
+      }
+    , { issue = 259
+      , description = "Articles and Discussion Syntax Error #2: print it like a boss The 2nd issue of the Syntax Error newsletter has a section dedicated to Elm, both for it’s…"
+      , date = "2023-04-05"
+      }
+    , { issue = 258
+      , description = "Articles and Discussion Haskell for Elm developers: giving names to stuff (Part 3 - Monads!) The 3rd installment in Flavio Corpa’s Haskell for Elm devs…"
+      , date = "2023-03-29"
+      }
+    , { issue = 257
+      , description = "Articles and Discussion Why is Elm such a delightful programming language? Marcio Frayze brings us another great piece on the joys of programming with…"
+      , date = "2023-03-22"
+      }
+    , { issue = 256
+      , description = "The Elm community has been super busy over the past couple months! I typically hold back 1 or 2 blog posts or videos so that each week I can provide you…"
+      , date = "2023-03-15"
+      }
+    , { issue = 255
+      , description = "New Elm conferences?"
+      , date = "2023-03-08"
+      }
+    , { issue = 254
+      , description = "Tools and Projects Elm-like JSON decoding in Java A package from Ethan McCue for decoding JSON in Java, heavily inspired by Elm. elm-card-game A package…"
+      , date = "2023-03-01"
+      }
+    , { issue = 253
+      , description = "With the continued Earthquakes in Turkey I thought I’d do something a little out of the ordinary for the newsletter. If you find yourself able to donate…"
+      , date = "2023-02-22"
+      }
+    , { issue = 252
+      , description = "Articles and Discussion Elm 2022, a year in review @lucamug has once again collected all the happenings in the Elm community! 3시간 만에 다 배우는 Elm 가이드 영상 I…"
+      , date = "2023-02-15"
+      }
+    , { issue = 251
+      , description = "Articles and Discussion Conway's Game of Life, and Emergence There are lots of ways to learn about Conways’s Game of Life and Elm but I really want to…"
+      , date = "2023-02-08"
+      }
+    , { issue = 250
+      , description = "Articles and Discussion Haskell for Elm Developers Flavio Corpa shares some notes on learning Haskell for someone already familiar with Elm. A Nice…"
+      , date = "2023-02-01"
+      }
+    , { issue = 249
+      , description = "Articles and Discussion Tools and Projects MIDI Surf A customizable, browser-based MIDI controller from Chris Wells Wood. elm-tooling Arm Binaries…"
+      , date = "2023-01-25"
+      }
+    , { issue = 248
+      , description = "Articles and Discussion Keys to Elm: Type Annotations @azurewaters talks about type annotations, and how to read and write them. Tools and Projects Geet…"
+      , date = "2023-01-18"
+      }
+    , { issue = 247
+      , description = "I couldn’t find a section to fit this in, but found it too cute not to include. An animation of a classic robot from @lucamug. Articles and Discussion…"
+      , date = "2023-01-11"
+      }
+    , { issue = 246
+      , description = "Hope everyone is having a great start to 2023. With the start of new things is there anyone that'd like to see Elm Weekly on other platforms beyond…"
+      , date = "2023-01-04"
+      }
     ]
+
+
+
+-- dataOld : List Data
+-- dataOld =
+--     [ { date = "2022-12-21", id = "244", issue = 244, description = "Articles and Discussion Testing Core-like Modules Martin Janiczek has started a new testing package for testing re-implementations of core modules. E.g…" }
+--     ]

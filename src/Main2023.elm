@@ -322,7 +322,7 @@ dataElmWeeklyToString : Year2023.ElmWeekly.Data -> String
 dataElmWeeklyToString data =
     let
         url =
-            "https://www.elmweekly.nl/p/elm-weekly-issue-" ++ data.id
+            "https://www.elmweekly.nl/p/elm-weekly-issue-" ++ String.fromInt data.issue
     in
     link
         { title =
