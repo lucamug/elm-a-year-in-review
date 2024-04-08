@@ -174,7 +174,7 @@ main =
                             (List.range 1 12)
                    )
                 ++ jobOffers
-                ++ "\n\n**This is all. See you in 2025!**\n\n❤️"
+                ++ "\n\n**This is all ❤️**\n\n"
 
         catData =
             categorizedData
@@ -236,37 +236,37 @@ companiesToAdd =
 jobOffers : String
 jobOffers =
     String.join "\n\n"
-        [ "\n\n## Some of the companies that hired Elm developers in 2023"
-        , String.join "\n\n"
-            (List.map
-                (\item ->
-                    let
-                        info =
-                            (if String.isEmpty item.careers then
-                                []
-
-                             else
-                                [ "[Careers](" ++ item.careers ++ ")" ]
-                            )
-                                ++ (if String.isEmpty item.source then
-                                        []
-
-                                    else
-                                        [ "[Info](" ++ item.source ++ ")" ]
-                                   )
-                    in
-                    "* [**"
-                        ++ item.name
-                        ++ "**]("
-                        ++ item.url
-                        ++ ") ("
-                        ++ String.join ", " info
-                        ++ ")"
-                )
-                (List.sortBy (\item -> String.toLower item.name) Year2023.JobOffers.data)
-            )
-        , "For more job related news, susbscribe to the [Elm Weekly newsletter](https://www.elmweekly.nl/) or to the #jobs channel in the [Elm Slack](https://elm-lang.org/community/slack)."
-        , "## Partial list of companies that use Elm"
+        -- [ "\n\n## Some of the companies that hired Elm developers in 2023"
+        -- , String.join "\n\n"
+        --     (List.map
+        --         (\item ->
+        --             let
+        --                 info =
+        --                     (if String.isEmpty item.careers then
+        --                         []
+        --
+        --                      else
+        --                         [ "[Careers](" ++ item.careers ++ ")" ]
+        --                     )
+        --                         ++ (if String.isEmpty item.source then
+        --                                 []
+        --
+        --                             else
+        --                                 [ "[Info](" ++ item.source ++ ")" ]
+        --                            )
+        --             in
+        --             "* [**"
+        --                 ++ item.name
+        --                 ++ "**]("
+        --                 ++ item.url
+        --                 ++ ") ("
+        --                 ++ String.join ", " info
+        --                 ++ ")"
+        --         )
+        --         (List.sortBy (\item -> String.toLower item.name) Year2023.JobOffers.data)
+        --     )
+        -- , "For more job related news, susbscribe to the [Elm Weekly newsletter](https://www.elmweekly.nl/) or to the #jobs channel in the [Elm Slack](https://elm-lang.org/community/slack)."
+        [ "\n\n## Partial list of companies that use Elm"
         , String.join " ⬩ "
             (List.map (\item -> " [" ++ item.name ++ "](" ++ item.url ++ ")") (List.sortBy (\item -> String.toLower item.name) (Companies.data ++ companiesToAdd)))
         , "This list is extracted from several sources, such as [elm-companies](https://github.com/jah2488/elm-companies), [Stackshare.io](https://stackshare.io/elm), blog posts, videos, talks, atc."
@@ -646,13 +646,16 @@ header : String
 header =
     """
     
-2023 has been another exciting year for Elm, with many interesting packages, blog posts, videos, podcasts, demos, tutorials, applications, and so on. 
+2023 has been another exciting year for Elm. This year, for lack of time, I collected only the podcasts (42 total episodes combining together Elm Radio and Elm Town podcasts) and the issues of the Elm Weekly newsletter (52 issues in total).
 
-Let's have a look at it in retrospect.
+Couple of highlight of the year were
 
-This is a list of relevant materials. I am sure there is stuff that I missed. [Send me a DM](https://twitter.com/luca_mug) in case you think there is something that I should add or remove.
+* The talk "[The Economics of Programming Languages](https://www.youtube.com/watch?v=XZ3w_jec1v8)" by Evan Czaplicki at the Strange Loop 2023 conference and
+* The [Elm Camp Europe 2023](https://elm.camp/elm-camp-archive), an unconference held in Denmark from June 28th to June 30th.
 
-At the bottom, you will also find [some of the companies that hired Elm developers in 2023](#some-of-the-companies-that-hired-elm-developers-in-2023) and a [partial list of companies that use Elm](#partial-list-of-companies-that-use-elm).
+A new [Elm Camp event](https://elm.camp/) has been organized also for June this year in UK.
+
+At the bottom, you can find a [partial list of companies that use Elm](#partial-list-of-companies-that-use-elm).
     
 If you want to keep up with Elm's related news:
 
@@ -668,6 +671,8 @@ You can also check the previous editions:
 
 * [Elm 2022, a year in review](https://dev.to/lucamug/elm-2022-a-year-in-review-33pp)
 * [Elm 2021, a year in review](https://dev.to/lucamug/elm-2021-a-year-in-review-4pho)
+
+[Send me a DM](https://twitter.com/luca_mug) in case you have any feedback.
 
 Here we go 🚀
 """
