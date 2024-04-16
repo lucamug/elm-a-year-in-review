@@ -323,16 +323,22 @@ dataElmWeeklyToString data =
     let
         url =
             "https://www.elmweekly.nl/p/elm-weekly-issue-" ++ String.fromInt data.issue
-    in
-    link
-        { title =
+
+        title =
             "Elm Weekly issue #"
                 ++ String.fromInt data.issue
+
+        image =
+            "elm-weekly.png"
+    in
+    link
+        { title = title
         , url = url
         }
         ++ " \""
         ++ data.description
         ++ "\""
+        ++ imageMd { image = imagesLocation ++ image, title = title, url = url }
 
 
 dataOthersToString : Year2023.Others.Data -> String
@@ -638,7 +644,7 @@ title: Elm 2023, a year in review
 published: false
 description: A list of contributions made in the year 2023 to the Elm  language. From blog posts to videos, from tutorials to demos.
 tags: elm, webdev, frontend
-cover_image: """ ++ imagesLocation ++ """cover2023-2.jpeg
+cover_image: """ ++ imagesLocation ++ """cover-2023.png
 ---"""
 
 
@@ -646,12 +652,17 @@ header : String
 header =
     """
     
-2023 has been another exciting year for Elm. This year, for lack of time, I collected only the podcasts (42 total episodes combining together Elm Radio and Elm Town podcasts) and the issues of the Elm Weekly newsletter (52 issues in total).
+2023 has been another exciting year for Elm. I didn't have time to review everything so this year I collected only the podcasts (42 total episodes combining together Elm Radio and Elm Town podcasts) and the Elm Weekly newsletter (52 issues in total).
 
 Couple of highlight of the year were
 
-* The talk "[The Economics of Programming Languages](https://www.youtube.com/watch?v=XZ3w_jec1v8)" by Evan Czaplicki at the Strange Loop 2023 conference and
+* The talk "[The Economics of Programming Languages](https://www.youtube.com/watch?v=XZ3w_jec1v8)" by Evan Czaplicki at the Strange Loop 2023 conference
+
+[![The Economics of Programming Languages](""" ++ imagesLocation ++ """evan-talk.png "The Economics of Programming Languages")](https://www.youtube.com/watch?v=XZ3w_jec1v8)
+
 * The [Elm Camp Europe 2023](https://elm.camp/elm-camp-archive), an unconference held in Denmark from June 28th to June 30th.
+
+[![Elm Camp Europe 2023](""" ++ imagesLocation ++ """unconference.png "Elm Camp Europe 2023")](https://elm.camp/elm-camp-archive)
 
 A new [Elm Camp event](https://elm.camp/) has been organized also for June this year in UK.
 
@@ -667,12 +678,12 @@ If you want to keep up with Elm's related news:
 * Browse the [Elmcraft website](https://elmcraft.org/)
 * Check [Incremental Elm Discord](https://incrementalelm.com/chat/) for working on Elm open source projects
 
-You can also check the previous editions:
+Check the previous editions of this post:
 
 * [Elm 2022, a year in review](https://dev.to/lucamug/elm-2022-a-year-in-review-33pp)
 * [Elm 2021, a year in review](https://dev.to/lucamug/elm-2021-a-year-in-review-4pho)
 
-[Send me a DM](https://twitter.com/luca_mug) in case you have any feedback.
+You can also [follow me on Twitter](https://twitter.com/luca_mug), as I usually repost Elm related stuff, or [Send me a DM](https://twitter.com/luca_mug) in case you have any feedback.
 
 Here we go 🚀
 """
